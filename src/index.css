@@ -1,10 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');
+
+
 body {
+  --tertiary-color: #14dad0;
+  --user-button-circle: rgba(0, 0, 0, 0.025);
+  --user-button-cardborder: rgba(255, 255, 255, 0.25);
+  --user-button-text: #323133;
+  --user-button-shadow: rgba(0, 0, 0, 0.1);
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  font-family: -apple-system, BlinkMacSystemFont, 'Special Elite','Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: rgb(0, 0, 0) !important;
+  color: white!important;
+
 }
 
 code {
