@@ -1,4 +1,11 @@
-
+.about-container{
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: space-evenly !important;
+}
+.about{
+  float: right;
+}
 
 .about-content{
     font-family:  monospace;

@@ -1,3 +1,22 @@
+.modal-fullscreen .modal-body{
+  overflow-x: auto;
+}
+
+.modal-body::-webkit-scrollbar {
+  height: 8px;              
+}
+.options::-webkit-scrollbar {
+  width: 5px;              
+}
+.options::-webkit-scrollbar-thumb {
+  background-color: var(--tertiary-color);   
+  border-radius: 10px;       
+}
+
+.modal-body::-webkit-scrollbar-thumb{
+  background-color: var(--tertiary-color);   
+  border-radius: 10px;       
+}
 .progress-div {
     align-items: center;
     display: flex;
@@ -14,7 +33,7 @@
 }
 
 .progress-full {
-    background: #037fff;
+    background: var(--tertiary-color);
     height: 100%;
     left: 0;
     position: absolute;
@@ -69,47 +88,37 @@ background-color: white !important;
     align-items: stretch;
     overflow: hidden;
     min-width: 600px;
-    max-width: 900px;
-    width: calc(100% - 100px);
+    width: calc(121% - 100px);
     height: 400px;
   }
   @media screen and (max-width: 718px) {
     body .options {
       min-width: 520px;
     }
-    body .options .option:nth-child(5) {
-      display: none;
-    }
+ 
   }
   @media screen and (max-width: 638px) {
     body .options {
       min-width: 440px;
     }
-    body .options .option:nth-child(4) {
-      display: none;
-    }
+
   }
   @media screen and (max-width: 558px) {
     body .options {
       min-width: 360px;
     }
-    body .options .option:nth-child(3) {
-      display: none;
-    }
+ 
   }
   @media screen and (max-width: 478px) {
     body .options {
       min-width: 280px;
     }
-    body .options .option:nth-child(2) {
-      display: none;
-    }
+   
   }
   body .options .option {
     position: relative;
-    overflow: hidden;
     min-width: 60px;
-    margin: 10px;
+    margin: 20px;
     background: var(--optionBackground, var(--defaultBackground, #e6e9ed));
     background-size: auto 120%;
     background-position: center;
@@ -121,6 +130,8 @@ background-color: white !important;
   }
   body .options .option:nth-child(2) {
     --defaultBackground: #07040400;
+    background-size: cover !important;
+
   }
   body .options .option:nth-child(3) {
     --defaultBackground: #07040400;
@@ -152,10 +163,7 @@ background-color: white !important;
     bottom: 20px;
     left: 20px;
   }
-  /* body .options .option.active .label .info > div {
-    left: 0px;
-    opacity: 1;
-  } */
+
   body .options .option:not(.active) {
     flex-grow: 1;
     border-radius: 30px;
@@ -236,15 +244,28 @@ background-color: white !important;
   }
 
   @media (max-width: 800px){
+.options{
+  display: inline-grid !important;
+  height: 89% !important;
+  overflow: auto !important;
 
+
+}
+
+.option{
+  height: 70%;
+  background-size: 64% !important;
+}
   .button-inter{
     margin-bottom: 150px;
   }
   body .options .option.active {
     transform: scale(1);
     width: 100%;
-    margin: 0px;
-    background-size:  contain;
+    height: 10%;
+    background-size:  cover !important;;
+    margin-top: 20px;
+    margin-bottom: 20px;
 
   
   }

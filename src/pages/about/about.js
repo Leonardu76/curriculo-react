@@ -12,11 +12,14 @@ const About = () => {
 
 
     return (
-        <div className='col-md-12 row'>
-           
-            <div className='col-md-5'>
+        <>
+             <div>
                 <Menu url={url} />
             </div>
+            <div className='container'>
+        <div className='col-md-12 about-container'>
+           
+       
 
             <div className='about col-md-5'>
 
@@ -32,9 +35,9 @@ const About = () => {
 
                 </div>
             </div>
-
+            </div>
         </div>
-
+        </>
     )
 }
 
