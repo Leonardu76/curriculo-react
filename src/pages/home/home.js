@@ -14,22 +14,24 @@ const Home = () => {
     let url = 'home'
 
 
-    return (           
-
-        <div class='col-md-12 row'>
-            <div class='col-md-3'>
+    return ( 
+        <div >
+           <div >
                 <Menu url={url} />
             </div>
-            <div class='content-home col-md-8'>
+        <div className='container'>
+        <div class='col-md-12'>
+         
+            <div class='content-home col-md-10'>
                 <div class='h1 line '>
                     <h1 class='col-md-3'>Olá, eu sou <strong>Leonardo Souza!</strong></h1>
                 </div>
-                <div class='content-home row'>
+                <div class='content-home-body row'>
                     <div class='content-img-home col-md-2'>
                         <div class="box-img-home" style={{ backgroundImage: "url(" + Photo + ")" }}>
                         </div>
                     </div>
-                    <div class='col-md-7'>
+                    <div class='content-home-footer col-md-7'>
                         <p class='content-resume-home'>
                             Desenvolvedor Web Jr <br />
                             Sou um estudante em constante aprendizado <hr />
@@ -53,6 +55,8 @@ const Home = () => {
                 </div>
             </div>
         </div>
+        </div>
+        </div>          
 
     )
 }
