@@ -144,16 +144,34 @@
         width: 15em;
     }
 }
+@media screen and (min-width: 320px) and (max-width: 400px) {
+    .line{
+        font-size: 80% !important;
 
+    } 
+}
+
+@media screen and (min-width: 768px) and (max-width: 800px) {
+    .line{
+        white-space: initial !important;
+
+    } 
+}
 
 @media screen and (min-width: 320px) and (max-width: 800px) {
     .line{
         white-space: pre-line;
+        width: 85% !important;
+
         /* margin: unset !important; */
     }
     .content-img-home {
         max-width: 50% !important;
       
+    }
+    .redes-home{
+        padding-bottom: 25%;
+
     }
     .content-home .row{
         display: inline-flex !important;
@@ -163,9 +181,7 @@
 }
 @media screen and (min-width: 800px) and (max-width: 991px) {
     .line{
-        white-space: pre-line;
-        width: 100%;
-
+        width: 85% !important;
     }
     .content-home .row{
         display: inline-flex !important;
