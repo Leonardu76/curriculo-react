@@ -10,7 +10,7 @@
 }
 
 .line {
-
+    width: 72%;
     border-right: 2px solid rgba(255, 255, 255, 0.75);
     color: rgba(255, 255, 255, 0.75);
     font-family: Special Elite, monospace;
