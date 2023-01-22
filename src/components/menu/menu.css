@@ -66,17 +66,14 @@ line-height: 60px;  color: white;
   }
  .menu-ul {
 
-    display: -webkit-flex;
-    display: flex;
-    -webkit-align-items: center;
-    align-items: center;
-    position: fixed;
-    width: 100%;
-    background: aliceblue;
-    color: black;
-    height: 50px;
-    bottom: 0;
-    left: 0;
+  display: flex;
+  position: fixed;
+  width: 100%;
+  background: aliceblue;
+  color: black;
+  bottom: 0;
+  justify-content: center;
+  align-items: center;
 }
 
 .menu-li, .active, .menu-li:hover {

@@ -26,8 +26,7 @@ const Home = () => {
                 </div>
                 <div class='content-home row'>
                     <div class='content-img-home col-md-2'>
-                        <div class="box-img-home img-fluid" style={{ backgroundImage: "url(" + Photo + ")" }}>
-                            <img class='photo-home' src="" alt="" />
+                        <div class="box-img-home" style={{ backgroundImage: "url(" + Photo + ")" }}>
                         </div>
                     </div>
                     <div class='col-md-7'>
