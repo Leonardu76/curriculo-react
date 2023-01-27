@@ -1,0 +1,50 @@
+.body-container{
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0.5rem 0.5rem 2rem 0 rgba(0, 0, 0, 0.2);
+    
+}
+
+.resume-title, .resume-description{
+color: white; 
+font-family: Special Elite, monospace;
+}
+
+.timeline-item-dateinner{
+    background: var(--tertiary-color);  
+    font-size: 15px !important;
+    width: 104% !important;;
+    margin-left: -6px !important;
+    background-color: var(--tertiary-color) !important;
+}
+
+.timeline-item-date{
+    width: 93% !important;
+}
+.timeline:before{
+    color: var(--tertiary-color);   
+}
+.entry .title:before{
+    background-color: black  !important;   
+}
+
+.entry .title{
+    color: white;
+}
+.entry:nth-child(even) > .body{
+    position: relative;
+    float: unset !important;
+    right: 157px;
+}
+
+.entry:nth-child(even) > .title .bounce-in  .timeline-item-date{
+    left: 180px !important;
+    clip-path:polygon(100% 0%,100% 48%,100% 100%,25% 240%,-2% 53%,2% 0%) !important;
+}
+
+.entry:nth-child(even) > .title .bounce-in  .timeline-item-date .timeline-item-dateinner{
+    clip-path:polygon(100% 0%,100% 48%,100% 100%,25% 240%,-2% 53%,2% 0%) !important;
+}
+
+
+

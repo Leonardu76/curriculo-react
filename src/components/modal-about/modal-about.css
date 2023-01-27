@@ -2,6 +2,13 @@
   overflow-x: auto;
 }
 
+/* .each-slide-effect > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  height: 350px;
+} */
 .modal-body::-webkit-scrollbar {
   height: 8px;              
 }
