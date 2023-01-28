@@ -5,7 +5,8 @@ import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeli
 // import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
 import { MdOutlineHomeWork, MdOutlineWorkOutline } from "react-icons/md";
-
+import { AiOutlineDownload } from "react-icons/ai";
+import Curriculo from "../../assets/pdf/vazio.docx"
 
 const Resume = () => {
     // const [data, setData] = useState([])
@@ -20,12 +21,25 @@ const Resume = () => {
         <Menu url={url} />
     </div>
         <div className='container'>
-        <div className=' content-resume'>
-         
-            <div className='home col-md-12'>
+        <div className=' content-resume row'>
+        <div className='col-md-2 btn-resume-content'>
+                <button className=' button-inter item9 btn-resume' >
+                <a href={Curriculo} download style={{color: "white"}}>
+                <AiOutlineDownload/>
+                </a>
+              
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <span className='resume-text-spam'>Baixar currículo</span>
+
+            </div>
+            <div className='home col-md-10'>
 
                 <h1 className='content-resume-title'>Resume</h1>
-
+              
                 <VerticalTimeline >
                     <VerticalTimelineElement
                         icon={<MdOutlineWorkOutline />}
