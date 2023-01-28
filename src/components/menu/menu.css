@@ -65,7 +65,7 @@ line-height: 60px;  color: white;
     all:unset;
   }
  .menu-ul {
-  
+  z-index: 2;
   height: 3rem;
   display: flex;
   position: fixed;

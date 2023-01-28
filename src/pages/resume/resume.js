@@ -22,7 +22,7 @@ const Resume = () => {
         <div className='container'>
         <div className=' content-resume'>
          
-            <div className='home col-md-11'>
+            <div className='home col-md-12'>
 
                 <h1 className='content-resume-title'>Resume</h1>
 
@@ -46,7 +46,7 @@ const Resume = () => {
                         Programação, alteração e correção de sites em PHP.
                         </p>
                     </VerticalTimelineElement>
-                    
+
                     <VerticalTimelineElement
                         icon={<MdOutlineHomeWork />}
                         date="08/2022 – 12/2022">

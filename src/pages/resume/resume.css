@@ -2,7 +2,9 @@
 float: right;
 margin-right: 10%;
 }
-
+.vertical-timeline-element:last-child{
+margin-bottom: 40% !important;
+}
 .body-container{
     padding: 20px;
     border-radius: 8px;
@@ -12,7 +14,9 @@ margin-right: 10%;
     margin-bottom: 30px;
     padding-top: 50px;
     text-align: start;
-    margin-left: 20%;
+    margin-left: 35%;
+    font-family: Special Elite, monospace;
+
 }
 .resume-title, .resume-description{
 color: white; 
@@ -40,10 +44,7 @@ font-family: Special Elite, monospace;
 .vertical-timeline-element-icon{
 background-color: black !important;
 }
-.vertical-timeline--two-columns .vertical-timeline-element-icon:hover + .vertical-timeline-element-content-arrow{
-    border-right: 7px solid  var(--tertiary-color) ;
 
-}
 .vertical-timeline--two-columns .vertical-timeline-element-icon:hover{
   cursor: pointer;
   color: var(--tertiary-color) ;
@@ -68,4 +69,16 @@ background-color: black !important;
     text-align: center !important;
 }
 
+}
+@media  screen and (min-width: 320px) and (max-width: 1170px) {
+
+    .vertical-timeline-element-date{
+        float: unset !important;
+        padding: 0.8em 32px !important;
+        clip-path: unset !important;
+    }
+    .vertical-timeline-element:nth-child(even) > .vertical-timeline-element-content .vertical-timeline-element-date{
+        clip-path: unset !important;
+
+    }
 }
