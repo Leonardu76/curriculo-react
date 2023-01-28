@@ -1,10 +1,19 @@
+.content-resume{
+float: right;
+margin-right: 10%;
+}
+
 .body-container{
     padding: 20px;
     border-radius: 8px;
-    box-shadow: 0.5rem 0.5rem 2rem 0 rgba(0, 0, 0, 0.2);
-    
+    box-shadow: 0.5rem 0.5rem 2rem 0 rgba(0, 0, 0, 0.2); 
 }
-
+.content-resume-title{
+    margin-bottom: 30px;
+    padding-top: 50px;
+    text-align: start;
+    margin-left: 20%;
+}
 .resume-title, .resume-description{
 color: white; 
 font-family: Special Elite, monospace;
@@ -19,7 +28,7 @@ font-family: Special Elite, monospace;
 }
 
 .timeline-item-date{
-    width: 93% !important;
+    width: 95% !important;
 }
 .timeline:before{
     color: var(--tertiary-color);   
@@ -48,3 +57,82 @@ font-family: Special Elite, monospace;
 
 
 
+@media screen and (max-width: 768px) {
+    .content-resume{
+        margin-right: unset;
+    }
+    .entry:nth-child(even) > .body{
+        position: unset !important;
+        float: unset !important;
+        right: unset !important;
+    }
+    .entry .title .bounce-in  .timeline-item-date{
+        left: 0 !important;
+        clip-path:polygon(100% 0%,100% 48%,100% 100%,25% 240%,-2% 53%,2% 0%) !important;
+    }
+    
+    .entry .title .bounce-in  .timeline-item-date .timeline-item-dateinner{
+        clip-path:polygon(100% 0%,100% 48%,100% 100%,25% 240%,-2% 53%,2% 0%) !important;
+    }
+    .entry:nth-child(even) > .title .bounce-in  .timeline-item-date{
+        left:  unset !important;
+        margin-bottom: 2rem !important;
+    }
+    .entry:nth-child(even) > .body  .bounce-in{
+        padding-top: 60px !important;
+       
+    }
+}
+@media screen and (min-width: 768px) and (max-width: 831px) {
+    .content-resume{
+        margin-right: unset;
+    }
+
+    /* .timeline-item-date{
+        width: 181%!important;
+        margin-left: -81px;
+    }     */
+    .entry:nth-child(even) > .body{
+     width: 63%;
+    }
+    .entry:nth-child(even) > .body .body-container{
+        margin-left: 5px;
+       }
+   
+    }
+    @media screen and (min-width: 832px) and (max-width: 1250px) {
+        .content-resume{
+            margin-right: unset;
+        }
+
+        .entry:nth-child(even) > .title .bounce-in  .timeline-item-date{
+            margin-left: -9%;
+            left: 180% !important;
+
+
+        }
+        .timeline-item-date{
+            width: 157%!important;
+            margin-left: -65% !important;
+
+        } 
+        .entry:nth-child(even) > .body{
+            width: 90%;
+           }
+           .entry:nth-child(even) > .body .body-container{
+               margin-left: 5px;
+               white-space: break-spaces;
+              }
+    }
+
+    @media screen and (min-width: 935px) and (max-width: 1250px) {
+        .entry:nth-child(even) > .body{
+            width: 55%;
+           }
+    }
+
+    @media screen and (min-width: 801px) and (max-width: 991px) {
+        .content-resume{
+            margin-left: 46%;        
+        }
+    }

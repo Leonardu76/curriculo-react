@@ -15,7 +15,7 @@ const Menu = (props) => {
  
 
                 <div className="menu-ul">
-                    <Link to={"/"}  className={url === 'home' ? ('active') : ('menu-li')}>
+                    <Link to={"/"}  className={url === 'home' ? ('active ') : ('menu-li')}>
                         <span>Home</span>
                     </Link>
                     <div>

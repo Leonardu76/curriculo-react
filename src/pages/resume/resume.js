@@ -12,13 +12,16 @@ const Resume = () => {
 
 
     return (
-        <div className='col-md-12 row'>
-            <div className='col-md-5'>
-                <Menu url={url} />
-            </div>
-            <div className='home col-md-5'>
+        <>
+        <div>
+        <Menu url={url} />
+    </div>
+        <div className='container'>
+        <div className=' content-resume'>
+         
+            <div className='home col-md-11'>
 
-                <h1>Resume</h1>
+                <h1 className='content-resume-title'>Resume</h1>
 
                 <Timeline >
                     <TimelineItem
@@ -55,7 +58,8 @@ const Resume = () => {
                 </Timeline>
             </div>
         </div>
-
+        </div>
+        </>
     )
 }
 
