@@ -1,7 +1,9 @@
 import React from 'react'
 import './resume.css'
 import Menu from '../../components/menu/menu'
-import { Timeline, TimelineItem } from 'vertical-timeline-component-for-react';
+import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component';
+// import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timeline-component';
+import 'react-vertical-timeline-component/style.min.css';
 
 
 const Resume = () => {
@@ -23,8 +25,8 @@ const Resume = () => {
 
                 <h1 className='content-resume-title'>Resume</h1>
 
-                <Timeline >
-                    <TimelineItem
+                <VerticalTimeline >
+                    <VerticalTimelineElement
                         key="001"
                         dateText="12/2022 – Present"
                     >
@@ -35,8 +37,8 @@ const Resume = () => {
                         </p>
                     
                    
-                    </TimelineItem>
-                    <TimelineItem
+                    </VerticalTimelineElement>
+                    <VerticalTimelineElement
                         key="002"
                         dateText="08/2022 – 12/2022">
                         <h3  className='resume-title'>Estágiario de Desenvolvimento Web</h3>
@@ -44,8 +46,8 @@ const Resume = () => {
                         <p className='resume-description'>
                         Programação, alteração e correção de sites em PHP.
                         </p>
-                    </TimelineItem>
-                    <TimelineItem
+                    </VerticalTimelineElement>
+                    <VerticalTimelineElement
                         key="003"
                         dateText="08/2022 – 12/2022">
                         <h3 className='resume-title'>Whobots</h3>
@@ -53,9 +55,21 @@ const Resume = () => {
                         <p className='resume-description'>
                             Auxilio no desenvolvimento de chatbots para o Telegram.
                         </p>
-                    </TimelineItem>
-
-                </Timeline>
+                    </VerticalTimelineElement>
+                    <VerticalTimelineElement
+    className="vertical-timeline-element--work"
+    contentStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
+    contentArrowStyle={{ borderRight: '7px solid  rgb(33, 150, 243)' }}
+    date="2011 - present"
+   
+  >
+    <h3 className="vertical-timeline-element-title">Creative Director</h3>
+    <h4 className="vertical-timeline-element-subtitle">Miami, FL</h4>
+    <p>
+      Creative Direction, User Experience, Visual Design, Project Management, Team Leading
+    </p>
+  </VerticalTimelineElement>
+                </VerticalTimeline>
             </div>
         </div>
         </div>
