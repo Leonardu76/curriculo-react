@@ -40,7 +40,7 @@ const Resume = () => {
                     <VerticalTimelineElement
                         icon={<MdOutlineWorkOutline />}
                         date="08/2022 – 12/2022">
-                        <h3  className='resume-title'>Estágiario de Desenvolvimento Web</h3>
+                        <h3  className='resume-title'>Estagiário em Desenvolvimento Web</h3>
                         <h4 className='resume-title'>Construsite Brasil</h4>
                         <p className='resume-description'>
                         Programação, alteração e correção de sites em PHP.
@@ -53,7 +53,7 @@ const Resume = () => {
                         <h3 className='resume-title'>Whobots</h3>
                         <h4 className='resume-title'>Desenvolvedor Python</h4>
                         <p className='resume-description'>
-                            Auxilio no desenvolvimento de chatbots para o Telegram.
+                            Auxílio no desenvolvimento de chatbots para o Telegram.
                         </p>
                     </VerticalTimelineElement>
                 

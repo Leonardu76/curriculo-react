@@ -20,6 +20,7 @@ margin-bottom: 40% !important;
 }
 .resume-title, .resume-description{
 color: white; 
+text-align: start;
 font-family: Special Elite, monospace;
 }
 
