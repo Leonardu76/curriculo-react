@@ -70,6 +70,7 @@ const Contact = () => {
                         <form onSubmit={sendMail}>
                             <div className='label-float'>
                                 <input className='inputForm col-md-6'
+                                    required={'required'}
                                     type="text" name='name'
                                     placeholder=" "
                                     onChange={(e) => setNome(e.target.value)}
@@ -80,6 +81,7 @@ const Contact = () => {
                             <div className='label-float'>
                                 <input className='inputForm col-md-6'
                                     type="text" name='email'
+                                    required={'required'}
                                     placeholder=" "
                                     onChange={(e) => setEmail(e.target.value)}
                                     value={email} />
@@ -89,6 +91,7 @@ const Contact = () => {
 
                             <div className='label-float'>
                                 <textarea className='inputForm col-md-10'
+                                    required={'required'}
                                     placeholder=" " rows="7"
                                     onChange={(e) => setAssunto(e.target.value)}
                                     value={assunto}

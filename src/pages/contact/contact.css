@@ -15,6 +15,9 @@
 }
 
 .contact-content{
+  transition: 1s;
+  animation: fadein 5s;
+
     display: inline-flex !important;
     flex-direction: column;
 }
@@ -94,9 +97,7 @@
     align-items: center;
     gap: 7px;
   }
-  .swal2-confirm{
-    background-color: red !important;
-}
+ 
 .swal2-popup{
     background: #0e0e0e !important;
     color: white !important;
@@ -116,6 +117,13 @@
   .swal2-styled.swal2-cancel:hover, .swal2-styled.swal2-confirm:hover{
   box-shadow: 0 0 5px #14dad0, 0 0 15px #5B2BE2, 0 0 15px #14dad0;  
 
+}
+
+.label-float input:focus:required:invalid,.label-float textarea:focus:required:invalid{
+  border-bottom: 2px solid red;
+}
+.label-float input:required:invalid + label:before,.label-float textarea:required:invalid + label:before{
+  content: '*';
 }
 
   @media  screen and (max-width: 850px) {
