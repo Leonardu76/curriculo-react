@@ -41,7 +41,7 @@
     border-top: 0;
     border-left: 0;
     border-right: 0;
-    border-bottom: 2px solid lightgrey;
+    border-bottom: 2px solid var(--tertiary-color) ;
     outline: none;
     min-width: 180px;
     font-size: 16px;
@@ -49,6 +49,7 @@
     -webkit-transition: all .3s ease-out;
     -moz-transition: all .3s ease-out;
     -webkit-appearance:none;
+    color: white;
 
   }
   
@@ -71,15 +72,8 @@
     -moz-transition: all .3s ease-out;
   }
   
-  .label-float input:required:invalid + label{
-    color: red;
-  }
-  .label-float input:focus:required:invalid{
-    border-bottom: 2px solid red;
-  }
-  .label-float input:required:invalid + label:before{
-    content: '*';
-  }
+ 
+
   .label-float input:focus + label,
   .label-float input:not(:placeholder-shown) + label{
     font-size: 13px;
@@ -100,6 +94,29 @@
     align-items: center;
     gap: 7px;
   }
+  .swal2-confirm{
+    background-color: red !important;
+}
+.swal2-popup{
+    background: #0e0e0e !important;
+    color: white !important;
+}
+.swal2-icon.swal2-question, .swal2-icon.swal2-success .swal2-success-ring,.swal2-icon.swal2-error{
+    border-color: var(--tertiary-color) !important;
+    color: var(--tertiary-color) !important;
+}
+.swal2-icon.swal2-success [class^=swal2-success-line], .swal2-icon.swal2-error [class^=swal2-x-mark-line]{
+  background: var(--tertiary-color) !important;
+}
+.swal2-styled.swal2-cancel, .swal2-styled.swal2-confirm{
+    background-color: rgb(221 51 51 / 0%) !important;
+    border: var(--tertiary-color) 1px groove !important;
+    
+  }
+  .swal2-styled.swal2-cancel:hover, .swal2-styled.swal2-confirm:hover{
+  box-shadow: 0 0 5px #14dad0, 0 0 15px #5B2BE2, 0 0 15px #14dad0;  
+
+}
 
   @media  screen and (max-width: 850px) {
     .form-contact-background, .form-contact{

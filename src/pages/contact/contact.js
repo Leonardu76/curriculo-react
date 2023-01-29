@@ -1,17 +1,59 @@
 import './contact.css'
 import Menu from '../../components/menu/menu'
-import React  from "react";
+import React, { useState } from "react";
 import { BiMailSend } from "react-icons/bi";
-
+// import Swal from 'sweetalert2'
+import emailjs from "@emailjs/browser"
+import { stripBasename } from '@remix-run/router';
 
 
 const Contact = () => {
-    // const [nome, setNome] = useState()
-    // const [email, setEmail] = useState()
-    // const [assunto, setAssunto] = useState()
+    const [nome, setNome] = useState()
+    const [email, setEmail] = useState()
+    const [assunto, setAssunto] = useState()
 
 
     let url = 'contact'
+    const Swal = require('sweetalert2')
+
+
+    function sendMail(e) {
+        e.preventDefault()
+        const emailParans = {
+            from_name: nome,
+            message: assunto,
+            email: email
+        }
+        Swal.fire({
+            title: 'Enviar Email?',
+            icon: 'question',
+            showCancelButton: true,
+            confirmButtonColor: '',
+            cancelButtonColor: '',
+            confirmButtonText: 'Enviar!'
+        }).then((result) => {
+            if (result.isConfirmed) {
+                emailjs.send("service_5hef5hc", "template_wij6115", emailParans, "Rn3bMroaX6cLH8evD").then((response) => {
+                    Swal.fire(
+                        'Enviado!',
+                        'Email enviado com sucesso!',
+                        'success'
+                    )
+                    setNome('')
+                    setEmail('')
+                    setAssunto('')
+                }, (err) => {
+                    Swal.fire(
+                        'Erro ao enviar!',
+                        'Tente novamente mais tarde!',
+                        'error'
+                    )
+                })
+
+            }
+        })
+
+    }
 
 
 
@@ -25,35 +67,48 @@ const Contact = () => {
                     <h1>Contact</h1>
                     <div className='form-contact-background '></div>
                     <div className='form-contact'>
-                    <div className='label-float'>
-                        <input className='inputForm col-md-6' type="text" name='name'
-                            placeholder=" " />
-                        <label><b>Nome</b></label>
+                        <form onSubmit={sendMail}>
+                            <div className='label-float'>
+                                <input className='inputForm col-md-6'
+                                    type="text" name='name'
+                                    placeholder=" "
+                                    onChange={(e) => setNome(e.target.value)}
+                                    value={nome} />
+                                <label><b>Nome</b></label>
+                            </div>
+
+                            <div className='label-float'>
+                                <input className='inputForm col-md-6'
+                                    type="text" name='email'
+                                    placeholder=" "
+                                    onChange={(e) => setEmail(e.target.value)}
+                                    value={email} />
+                                <label><b>Email</b></label>
+                            </div>
+
+
+                            <div className='label-float'>
+                                <textarea className='inputForm col-md-10'
+                                    placeholder=" " rows="7"
+                                    onChange={(e) => setAssunto(e.target.value)}
+                                    value={assunto}
+                                ></textarea>
+                                <label><b>Assunto</b></label>
+                            </div>
+
+                            <button className=' button-inter item9 btn-send-email' >
+                                <BiMailSend />
+                                Enviar
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </button>
+                        </form>
                     </div>
-
-                    <div className='label-float'>
-                        <input className='inputForm col-md-6' type="text" name='name'
-                            placeholder=" " />
-                        <label><b>Email</b></label>
-                        </div>
-
-
-                        <div className='label-float'>
-                        <textarea className='inputForm col-md-10' placeholder=" " rows="7"></textarea>
-                        <label><b>Assunto</b></label>
-                        </div>
-                        <button className=' button-inter item9 btn-send-email' >
-                <BiMailSend/>
-                Enviar
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-                        </div>
                 </div>
             </div>
-            </div>
+        </div>
 
     )
 }
