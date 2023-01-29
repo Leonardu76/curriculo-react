@@ -1,14 +1,14 @@
 import './contact.css'
 import Menu from '../../components/menu/menu'
-import React, { useState } from "react";
+import React  from "react";
 import { BiMailSend } from "react-icons/bi";
 
 
 
 const Contact = () => {
-    const [nome, setNome] = useState()
-    const [email, setEmail] = useState()
-    const [assunto, setAssunto] = useState()
+    // const [nome, setNome] = useState()
+    // const [email, setEmail] = useState()
+    // const [assunto, setAssunto] = useState()
 
 
     let url = 'contact'
