@@ -1,7 +1,6 @@
 import React from 'react'
 import './home.css'
 import Menu from '../../components/menu/menu'
-import Photo from "../../assets/imgs/perfil.jpg"
 
 import { SlSocialLinkedin } from 'react-icons/sl';
 import { VscGithubAlt } from "react-icons/vsc";
