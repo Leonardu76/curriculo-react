@@ -4,7 +4,6 @@ import React, { useState } from "react";
 import { BiMailSend } from "react-icons/bi";
 // import Swal from 'sweetalert2'
 import emailjs from "@emailjs/browser"
-import { stripBasename } from '@remix-run/router';
 
 
 const Contact = () => {
