@@ -1,4 +1,6 @@
 .about-container{
+  font-family: Special Elite, monospace;
+
   display: inline-flex !important;
   align-items: center !important;
   justify-content: space-evenly !important;
@@ -8,12 +10,15 @@
 }
 
 .about-content{
-    font-family:  monospace;
-    text-align: start;
+  animation: fadein 5s;
+
+  text-align: start;
     font-size: 25px;
 }
 
 .about-title{
+  animation: fadein 5s;
+
     margin-bottom: 30px;
     padding-top: 50px;
     text-align: start;

@@ -1,0 +1,122 @@
+.form-contact-background{
+    width: 452px;
+    background-image: url("https://thumbs.gfycat.com/KeenChillyIberianbarbel-size_restricted.gif");
+    /* background: rgba( 255, 255, 255, 0.35 ); */
+    background-size: cover;
+    -webkit-filter: blur(7px);
+    filter: blur(2px);
+    -moz-filter: blur(7px);
+    -ms-filter: blur(7px);    
+    -o-filter: blur(7px);
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    height: 501px;
+    margin-top: 24px;
+
+}
+
+.contact-content{
+    display: inline-flex !important;
+    flex-direction: column;
+}
+.label-float{
+    position: relative;
+    padding-top: 20px;
+    margin-top: 38px;
+    z-index: 2;
+}
+.form-contact{
+    position: absolute;
+    height: 501px;
+    border-radius: 20px;
+    border: 2px groove var(--tertiary-color)    ;
+    margin-top: 78px;
+    width: 452px;
+
+  }
+  
+  .label-float input,.label-float textarea {
+    background-color: rgba(16, 133, 235, 0);
+    width:  85%;
+    border:rgba(255, 255, 255, 0.836) groove;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 2px solid lightgrey;
+    outline: none;
+    min-width: 180px;
+    font-size: 16px;
+    transition: all .3s ease-out;
+    -webkit-transition: all .3s ease-out;
+    -moz-transition: all .3s ease-out;
+    -webkit-appearance:none;
+
+  }
+  
+  .label-float input:focus,  .label-float textarea:focus{
+    border-bottom: 2px solid var(--tertiary-color);;
+  }
+
+  .label-float textarea::placeholder, .label-float input::placeholder{
+    color:transparent;
+  }
+  
+  .label-float label{
+    pointer-events: none;
+    position: absolute;
+    top: 0;
+    left: 32px;
+    margin-top: 13px;
+    transition: all .3s ease-out;
+    -webkit-transition: all .3s ease-out;
+    -moz-transition: all .3s ease-out;
+  }
+  
+  .label-float input:required:invalid + label{
+    color: red;
+  }
+  .label-float input:focus:required:invalid{
+    border-bottom: 2px solid red;
+  }
+  .label-float input:required:invalid + label:before{
+    content: '*';
+  }
+  .label-float input:focus + label,
+  .label-float input:not(:placeholder-shown) + label{
+    font-size: 13px;
+    margin-top: 0;
+    color: var(--tertiary-color);
+  }
+
+  .label-float textarea:focus + label,
+  .label-float textarea:not(:placeholder-shown) + label{
+    font-size: 13px;
+    margin-top: 0;
+    color: var(--tertiary-color);;
+  }
+
+  .btn-send-email{
+    display: inline-flex !important;
+    flex-direction: row;
+    align-items: center;
+    gap: 7px;
+  }
+
+  @media  screen and (max-width: 850px) {
+    .form-contact-background, .form-contact{
+       width: 70%;
+       height: 70%;
+       margin-left: 10%;
+       margin-right: 10%;
+       position: absolute;
+    }
+    .form-contact-background{
+        margin-top: 69px;
+    }
+    .label-float {
+        margin-top: 3px;
+    }
+    .contact-content{
+        display: block !important;
+    }
+  }
+ 

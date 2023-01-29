@@ -52,6 +52,7 @@ background-color: black !important;
 
 .vertical-timeline--two-columns .vertical-timeline-element-icon:hover{
   cursor: pointer;
+  transition: 1s;
   color: var(--tertiary-color) ;
      -webkit-box-shadow: 0 0 0 4px #fff, inset 0 2px 0 rgb(0 0 0 / 8%), 0 3px 0 4px rgb(0 0 0 / 5%);
      box-shadow: 0 0 0 4px  var(--tertiary-color) , inset 0 2px 0 rgb(0 0 0 / 8%), 0 3px 0 4px rgb(0 0 0 / 5%);
@@ -112,6 +113,10 @@ background-color: black !important;
         clip-path: unset !important;
 
     }
+    .resume-text-spam{
+        top: 11px;
+        left: -31%;
+    }
 }
 
 @media  screen and (min-width: 800px) and (max-width: 1100px) {
@@ -120,7 +125,5 @@ background-color: black !important;
         right: 7% ;
         bottom: 7%;
     }
-    .resume-text-spam{
-        top: unset;
-    }
+   
 }

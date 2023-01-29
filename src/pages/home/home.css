@@ -87,6 +87,8 @@
 .icon-border:hover {
     border: 2px solid var(--tertiary-color);
     color: var(--tertiary-color);
+    transition: 1s;
+
 }
 
 .redes-home {
