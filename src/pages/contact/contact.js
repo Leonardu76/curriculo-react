@@ -63,7 +63,7 @@ const Contact = () => {
             </div>
             <div className='container '>
                 <div className='contact-content'>
-                    <h1>Contact</h1>
+                <h1 className='contact-title'>Contate-me</h1>
                     <div className='form-contact-background '></div>
                     <div className='form-contact'>
                         <form onSubmit={sendMail}>

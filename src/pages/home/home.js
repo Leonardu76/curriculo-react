@@ -27,14 +27,15 @@ const Home = () => {
                     <h1 class='col-md-3'>Olá, eu sou <strong>Leonardo Souza!</strong></h1>
                 </div>
                 <div class='content-home-body row'>
-                    <div class='content-img-home col-md-2'>
+                    {/* <div class='content-img-home col-md-2'>
                         <div class="box-img-home" style={{ backgroundImage: "url(" + Photo + ")" }}>
                         </div>
-                    </div>
+                    </div> */}
                     <div class='content-home-footer col-md-7'>
                         <p class='content-resume-home'>
-                            Desenvolvedor Web Jr <br />
-                            Sou um estudante em constante aprendizado <hr />
+                            Desenvolvedor Web Jr. <br />
+                            Análise e Desenvolvimento de Sistemas. 
+                            <hr />
                             Belo Horizonte
                         </p>
                         <div class='redes-home'>

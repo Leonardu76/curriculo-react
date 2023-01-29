@@ -12,16 +12,18 @@ const Portfolio = () => {
 
 
     return (
+        <div className='container'>
         <div className='col-md-12 row'>
             <div className='col-md-5'>
                 <Menu url={url} />
             </div>
-            <div className='home col-md-5'>
+            <div className='home col-md-12'>
 
                 <h1>Port</h1>
-
+                 
+               
             </div>        </div>
-
+            </div>
     )
 }
 

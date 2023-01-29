@@ -13,7 +13,10 @@
     margin-top: 24px;
 
 }
-
+.contact-title{
+  margin-top: 30px;
+  font-family: Special Elite, monospace;
+}
 .contact-content{
   transition: 1s;
   animation: fadein 5s;
@@ -133,6 +136,8 @@
        margin-left: 10%;
        margin-right: 10%;
        position: absolute;
+       margin-top: 5px;
+
     }
     .form-contact-background{
         margin-top: 69px;

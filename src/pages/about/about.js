@@ -1,11 +1,11 @@
 import React from 'react'
 import './about.css'
 import Menu from '../../components/menu/menu'
-import Teste from '../../components/modal-about/modal-about'
+import Habilidades from '../../components/modal-about/modal-about'
+import Certificados from '../../components/modal-certifieds/modal-certifieds'
 
 
 const About = () => {
-    // const [data, setData] = useState([])
 
     let url = 'about'
 
@@ -13,30 +13,38 @@ const About = () => {
 
     return (
         <>
-             <div>
+            <div>
                 <Menu url={url} />
             </div>
             <div className='container'>
-        <div className='col-md-12 about-container'>
-           
-       
+                <div className='col-md-12 about-container'>
 
-            <div className='about col-md-5'>
 
-                <h1 className='about-title'>Sobre mim</h1>
-                <div className='about-content'>
-                <p>Meu nome é Leonardo Oliveira Souza, tenho 24 anos. <br />
-                Sou Desenvolvedor Web Jr.</p>
-                <p>  Faço Análise e Desenvolvimento de Sistemas pela Cruzeiro do Sul. <br />
-                    Venho estudando programação há pouco mais de um ano e estou sempre   me aprimorando.</p>
-                </div>
-                <div className='col-md-12'>
-                <Teste/>
 
+                    <div className='about col-md-5'>
+
+                        <h1 className='about-title'>Sobre mim</h1>
+                        <div className='about-content'>
+                            <p>Sou Leonardo Oliveira Souza, tenho 25 anos.
+                                <br />
+                                Sou Desenvolvedor Web Jr.</p>
+                            <p>  Faço Análise e Desenvolvimento de Sistemas pela Cruzeiro do Sul.
+                            </p>
+                            </div>
+
+                        <div className='nav about-btns'>
+                            <div className='com-md-6'>
+                            <Habilidades />
+                            </div>
+
+                            <div className='com-md-6'>
+                            <Certificados/>
+                            </div>
+
+                        </div>
+                    </div>
                 </div>
             </div>
-            </div>
-        </div>
         </>
     )
 }

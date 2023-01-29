@@ -109,3 +109,13 @@
     cursor: pointer;
     transition: .5s;
   }
+
+
+  @media  screen and (max-width: 850px) {
+    .about-btns:last-child{
+margin-bottom: 20%;
+gap: 12px;
+}
+
+  }
+
