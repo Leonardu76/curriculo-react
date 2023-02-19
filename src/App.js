@@ -5,7 +5,9 @@ import About from './pages/about/about'
 import Portfolio from './pages/portfolio/portfolio'
 import Contact from './pages/contact/contact'
 import Resume from './pages/resume/resume'
+import Projetos from './pages/projectsByTecnologie/projectsByTecnologie'
 import React from 'react'
+
 
 function App() {
   return (
@@ -19,6 +21,7 @@ function App() {
 <Route element={<Contact />} path="/contact" />
 <Route element={<Portfolio />} path="/portfolio"/>
 <Route element={<Resume />} path="/resume"/>
+<Route element={<Projetos />} path="/projects/:name"/>
 
   <Route path='*' element={<div><h1>Página não encontrada!!</h1>
   <img src="https://media.tenor.com/IHdlTRsmcS4AAAAM/404.gif" alt="" />

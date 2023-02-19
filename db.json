@@ -1,0 +1,46 @@
+{
+  "tecnologies": [
+    {
+      "php": [
+        {
+          "id": 1,
+          "nome": "Em andamento",
+          "img":null,
+          "tecnologies": "Lorem ipsum,Lorem ipsum, Lorem ipsum, Lorem ipsum ",
+          "descricao": "Lorem ipsum dolor sit amet consec tetur adipisicing elit. Dolores, volupt dent eveniet exercitationem, nemo corrupti cupiditate?.",
+          "url_git": null,
+          "url_site": null
+        }
+      ]
+    },
+    {
+      "python": [
+        {
+          "id": 1,
+          "nome": "Em andamento",
+          "img":null,
+          "tecnologies": "Lorem ipsum,Lorem ipsum, Lorem ipsum, Lorem ipsum ",
+          "descricao": "Lorem ipsum dolor sit amet consec tetur adipisicing elit. Dolores, volupt dent eveniet exercitationem, nemo corrupti cupiditate?.",
+          "url_git": null,
+          "url_site": null
+        }
+      ]
+    
+        },
+    {
+      "python": [
+        {
+          "id": 1,
+          "nome": "Em andamento",
+          "img":null,
+          "tecnologies": "Lorem ipsum,Lorem ipsum, Lorem ipsum, Lorem ipsum ",
+          "descricao": "Lorem ipsum dolor sit amet consec tetur adipisicing elit. Dolores, volupt dent eveniet exercitationem, nemo corrupti cupiditate?.",
+          "url_git": null,
+          "url_site": null
+        }
+      ]
+    }
+  ]
+
+  
+}

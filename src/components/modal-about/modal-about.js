@@ -75,7 +75,7 @@ Habilidades
                 </Modal.Header>
                 <div className='modal-body col-md-10'>
                 <div>
-                        <Slider {...settings}>
+                        <Slider {...settings}> 
 
 
                             <div className='div-img content-img-home'>

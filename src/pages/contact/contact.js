@@ -63,7 +63,7 @@ const Contact = () => {
             </div>
             <div className='container '>
                 <div className='contact-content'>
-                <h1 className='contact-title'>Contate-me</h1>
+                    <h1 className='contact-title'>Contate-me</h1>
                     <div className='form-contact-background '></div>
                     <div className='form-contact'>
                         <form onSubmit={sendMail}>
@@ -89,7 +89,7 @@ const Contact = () => {
 
 
                             <div className='label-float'>
-                                <textarea className='inputForm col-md-10'
+                                <textarea className='inputForm col-md-10 text-area'
                                     required={'required'}
                                     placeholder=" " rows="7"
                                     onChange={(e) => setAssunto(e.target.value)}

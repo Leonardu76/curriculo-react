@@ -5,6 +5,7 @@ import './modal-certifieds.css'
 
 
 function Certificados() {
+    const [isShown, setIsShown] = useState(false);
 
     const [show, setShow] = useState(false);
     const [fullscreen, setFullscreen] = useState(true);
@@ -30,7 +31,16 @@ function Certificados() {
                     <h1 className='modal-title'>Certificados</h1>
                 </Modal.Header>
                 <div className='col-md-10 content-certified'>
-                   
+                <button
+        onMouseEnter={() => setIsShown(true)}
+        onMouseLeave={() => setIsShown(false)}>
+        Hover over me!
+      </button>
+      {isShown && (
+        <div>
+          I'll appear when you hover over the button.
+        </div>
+      )}
                 </div>
 
             </Modal>

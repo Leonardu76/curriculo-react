@@ -64,7 +64,7 @@ display: block;
     box-shadow: 0 0 10px #14dad0, 0 0 15px #5B2BE2, 0 0 30px #14dad0;
     cursor: pointer;
 }
-.img-div-background:hover > .container > .title-tec-spam {
+.img-div-background:hover >  .title-tec-spam {
     display: inline-grid;
 
 }

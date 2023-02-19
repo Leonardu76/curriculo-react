@@ -13,6 +13,9 @@
     margin-top: 24px;
 
 }
+.text-area{
+  resize: none;
+}
 .contact-title{
   margin-top: 30px;
   font-family: Special Elite, monospace;
