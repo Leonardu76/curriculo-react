@@ -59,8 +59,8 @@ function Projetos() {
                     "id": 1,
                     "nome": "Pokedex",
                     "img": Pokedex,
-                    "tecnologies": "Lorem ipsum,Lorem ipsum, Lorem ipsum, Lorem ipsum ",
-                    "descricao": "Quem nunca teve a curiosidade de saber qual é  aquele pokemon? Ou saber da próxima evolução dele? Pensando nisso criei a Pokedex!.",
+                    "tecnologies": "React.js, Fetch API, Styled Components",
+                    "descricao": "Quem nunca quis saber o nome daquele pokemon? Ou saber da próxima evolução dele? Pensando nisso criei a Pokedex!",
                     "url_git": "https://www.github.com/Leonardu76/Pokedex-React",
                     "url_site": "https://dapper-pie-836bf4.netlify.app/"
                 }
@@ -98,7 +98,7 @@ function Projetos() {
 
                             <div className='portfolio-content col-md-4' >
                                 <div className='portfolio-content-title' >
-                                    <h4>{tecnologies.tecnologies}</h4>
+                                    <p>{tecnologies.tecnologies}</p>
                                 </div>
                                 <div className='portfolio-description card' >
                                     {tecnologies.descricao}

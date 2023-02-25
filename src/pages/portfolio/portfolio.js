@@ -38,6 +38,7 @@ const Portfolio = () => {
             </div>
             <div className='container'>
                 <div className='div-project row'>
+                    <h1 className='contact-title'>Projetos</h1>
 
 
                     {cat.map((tecnologies) => (
@@ -48,18 +49,18 @@ const Portfolio = () => {
                                     <div className="borderTopRight"></div>
                                     <Link to={urlP + tecnologies.nome} >
 
-                                    <div className='img-div-project'>
+                                        <div className='img-div-project'>
 
-                                        <div className='img-div-background' style={{ backgroundImage: "url(" + tecnologies.img + ")" }}>
-                                            <button className='title-tec-spam'  >
-                                                {tecnologies.nome}
-                                            </button>
+                                            <div className='img-div-background' style={{ backgroundImage: "url(" + tecnologies.img + ")" }}>
+                                                <button className='title-tec-spam'  >
+                                                    {tecnologies.nome}
+                                                </button>
+                                            </div>
                                         </div>
-                                    </div>
 
-                                    <div className="borderBottomLeft"></div>
-                                    <div className="borderBottomRight"></div>
-</Link>
+                                        <div className="borderBottomLeft"></div>
+                                        <div className="borderBottomRight"></div>
+                                    </Link>
                                 </div>
 
                             </div>

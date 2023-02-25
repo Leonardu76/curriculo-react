@@ -1,0 +1,27 @@
+.content-certified{
+    display: inline-grid;
+    align-content: stretch;
+    justify-content: center;
+    align-items: baseline;
+    justify-items: start;
+    margin-top: 40px;
+    font-size: 20px;
+    line-height: 35px;
+    border-bottom: 1px solid white;
+    font-family: monospace;
+}
+
+.link{
+    text-decoration: none;
+    color: white;
+}
+.link:hover{
+    color: var(--tertiary-color)
+}
+.link:last-child{
+    margin-bottom: 20px;
+}
+.modal-title{
+    font-family: Special Elite, monospace;
+
+}

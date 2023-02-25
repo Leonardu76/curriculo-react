@@ -10,9 +10,11 @@ import ReactImg from "../../assets/imgs/skills/react.png"
 import Django from "../../assets/imgs/skills/django.png"
 import Laravel from "../../assets/imgs/skills/laravel.png"
 import Php from "../../assets/imgs/skills/php.png"
+import jquery from "../../assets/imgs/skills/jquery.png"
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css"
+import { Link } from "react-router-dom"
 
 
 function Habilidades() {
@@ -24,6 +26,8 @@ function Habilidades() {
         setFullscreen(breakpoint);
         setShow(true);
     }
+
+
     var settings = {
         dots: true,
         infinite: true,
@@ -59,6 +63,78 @@ function Habilidades() {
             ],
     };
 
+    const tecnologies = [
+        {
+            "id": 1,
+            "nome": "React",
+            "img": ReactImg,
+            "percentage": "65%"
+        },
+        {
+            "id": 2,
+            "nome": "PHP",
+            "img": Php,
+            "percentage": "85%"
+
+        },
+        {
+
+            "id": 3,
+            "nome": "Python",
+            "img": Phyton,
+            "percentage": "65%"
+
+        },
+        {
+
+            "id": 4,
+            "nome": "Laravel",
+            "img": Laravel,
+            "percentage": "45%"
+
+        }
+        ,
+        {
+
+            "id": 6,
+            "nome": "Django",
+            "img": Django,
+            "percentage": "65%"
+
+        },
+        {
+
+            "id": 7,
+            "nome": "Mysql",
+            "img": Mysql,
+            "percentage": "85%"
+
+        },
+        {
+
+            "id": 8,
+            "nome": "Mongo",
+            "img": Mongo,
+            "percentage": "65%"
+
+        }
+        ,
+        {
+
+            "id": 9,
+            "nome": "Git",
+            "img": Git,
+            "percentage": "85%"
+
+        },
+        {
+            "id": 10,
+            "nome": "Jquery",
+            "img": jquery,
+            "percentage": "45%"
+        },
+    ]
+    const url = '../projects/'
     return (
         <div className='container' >
             <button className=' button-inter item9' onClick={handleShow}>
@@ -78,134 +154,28 @@ Habilidades
                         <Slider {...settings}> 
 
 
+                        {tecnologies.map((tecnologie) => (                
+<>                    <Link to={ tecnologie.nome == 'PHP' || tecnologie.nome == 'Laravel' ? url+'php' : tecnologie.nome == 'Python' || tecnologie.nome == 'Django' ?  url+'python'  : tecnologie.nome == 'React' ?  url+'react' : null} >                    
+
                             <div className='div-img content-img-home'>
-                                <div className='box-img-home' style={{ backgroundImage: "url(" + Php + ")" }}>
+                                <div className='box-img-home' style={{ backgroundImage: "url(" + tecnologie.img + ")" }}>
                                     <div className="shadow"></div>
                                     <div className="label2">
                                         <div className="info">
-                                            <div className="main">PHP</div>
+                                            <div className="main">{tecnologie.nome}</div>
                                             <div className="progress-div">
-                                                <div className="progress-percentage">85%</div>
-                                                <div className="progress-fuel"><span className="progress-full" style={{ width: "65%" }}></span></div>
+                                                <div className="progress-percentage">{tecnologie.percentage}</div>
+                                                <div className="progress-fuel">
+                                                <span className={ tecnologie.percentage == '85%' ? 'progress-full' : tecnologie.percentage == '65%' ? 'progress-full-2' : ('progress-full-3')}></span>
+                                                </div>
                                             </div>
 
                                         </div>
                                     </div>
                                 </div>
                             </div>
-
-                            <div className='div-img content-img-home'>
-                                <div className='box-img-home' style={{ backgroundImage: "url(" + Laravel + ")" }}>
-                                    <div className="shadow"></div>
-                                    <div className="label2">
-                                        <div className="info">
-                                            <div className="main">Laravel</div>
-                                            <div className="progress-div">
-                                                <div className="progress-percentage">85%</div>
-                                                <div className="progress-fuel"><span className="progress-full" style={{ width:'20px' }}></span></div>
-                                            </div>
-
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div className='div-img content-img-home'>
-                                <div className='box-img-home' style={{ backgroundImage: "url(" + ReactImg + ")" }}>
-                                    <div className="shadow"></div>
-                                    <div className="label2">
-                                        <div className="info">
-                                            <div className="main">React</div>
-                                            <div className="progress-div">
-                                                <div className="progress-percentage">85%</div>
-                                                <div className="progress-fuel"><span className="progress-full" style={{ width: "65%" }}></span></div>
-                                            </div>
-
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div className='div-img content-img-home'>
-                                <div className='box-img-home' style={{ backgroundImage: "url(" + Phyton + ")" }}>
-                                    <div className="shadow"></div>
-                                    <div className="label2">
-                                        <div className="info">
-                                            <div className="main">Phyton</div>
-                                            <div className="progress-div">
-                                                <div className="progress-percentage">85%</div>
-                                                <div className="progress-fuel"><span className="progress-full" style={{ width: "65%" }}></span></div>
-                                            </div>
-
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div className='div-img content-img-home'>
-                                <div className='box-img-home' style={{ backgroundImage: "url(" + Django + ")" }}>
-                                    <div className="shadow"></div>
-                                    <div className="label2">
-                                        <div className="info">
-                                            <div className="main">Django</div>
-                                            <div className="progress-div">
-                                                <div className="progress-percentage">85%</div>
-                                                <div className="progress-fuel"><span className="progress-full" style={{ width: "65%" }}></span></div>
-                                            </div>
-
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div className='div-img content-img-home'>
-                                <div className='box-img-home' style={{ backgroundImage: "url(" + Mysql + ")" }}>
-                                    <div className="shadow"></div>
-                                    <div className="label2">
-                                        <div className="info">
-                                            <div className="main">Mysql</div>
-                                            <div className="progress-div">
-                                                <div className="progress-percentage">85%</div>
-                                                <div className="progress-fuel"><span className="progress-full" style={{ width: "65%" }}></span></div>
-                                            </div>
-
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div className='div-img content-img-home'>
-                                <div className='box-img-home' style={{ backgroundImage: "url(" + Mongo + ")" }}>
-                                    <div className="shadow"></div>
-                                    <div className="label2">
-                                        <div className="info">
-                                            <div className="main">Mongo</div>
-                                            <div className="progress-div">
-                                                <div className="progress-percentage">85%</div>
-                                                <div className="progress-fuel"><span className="progress-full" style={{ width: "65%" }}></span></div>
-                                            </div>
-
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div className='div-img content-img-home'>
-                                <div className='box-img-home' style={{ backgroundImage: "url(" + Git + ")" }}>
-                                    <div className="shadow"></div>
-                                    <div className="label2">
-                                        <div className="info">
-                                            <div className="main">Git</div>
-                                            <div className="progress-div">
-                                                <div className="progress-percentage">75%</div>
-                                                <div className="progress-fuel"><span className="progress-full" style={{ width: "45%" }}></span></div>
-                                            </div>
-
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
+                            </Link>
+                            </>  ))}
                         </Slider>
                     </div>
 

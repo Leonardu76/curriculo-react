@@ -55,7 +55,7 @@ display: block;
     text-transform: uppercase;
     font-size: 17px;
     margin-left: -5px;
-    margin-top: 125%;
+    margin-top: 104%;
     border: 2px groove var(--tertiary-color);
     background-color: transparent;
     transition: 1s;

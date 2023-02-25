@@ -2,14 +2,12 @@ import React from 'react'
 import './resume.css'
 import Menu from '../../components/menu/menu'
 import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component';
-// import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
 import { MdOutlineHomeWork, MdOutlineWorkOutline } from "react-icons/md";
 import { AiOutlineDownload } from "react-icons/ai";
 import Curriculo from "../../assets/pdf/vazio.docx"
 
 const Resume = () => {
-    // const [data, setData] = useState([])
 
     let url = 'resume'
 
@@ -38,7 +36,7 @@ const Resume = () => {
             </div>
             <div className='home col-md-10'>
 
-                <h1 className='content-resume-title'>Resume</h1>
+                <h1 className='content-resume-title'>Experiências</h1>
               
                 <VerticalTimeline >
                     <VerticalTimelineElement

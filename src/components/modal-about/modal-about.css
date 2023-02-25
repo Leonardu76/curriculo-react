@@ -1,162 +1,202 @@
-.modal-fullscreen .modal-body{
+.modal-fullscreen .modal-body {
   overflow: unset !important;
 }
 
 
 .modal-body::-webkit-scrollbar {
-  height: 8px;              
+  height: 8px;
 }
+
 .options::-webkit-scrollbar {
-  width: 5px;              
+  width: 5px;
 }
+
 .options::-webkit-scrollbar-thumb {
-  background-color: var(--tertiary-color);   
-  border-radius: 10px;       
+  background-color: var(--tertiary-color);
+  border-radius: 10px;
 }
 
-.modal-body::-webkit-scrollbar-thumb{
-  background-color: var(--tertiary-color);   
-  border-radius: 10px;       
+.modal-body::-webkit-scrollbar-thumb {
+  background-color: var(--tertiary-color);
+  border-radius: 10px;
 }
 
-.btn-close{
-background-color: var(--tertiary-color) !important;
-opacity: unset !important;
-}
-.btn-close:hover{
-  filter: brightness(1.75) !important; }
-.modal-content{
-    background-color: rgba(0, 0, 0, 0.589) !important;
+.btn-close {
+  background-color: var(--tertiary-color) !important;
+  opacity: unset !important;
 }
 
-  @media screen and (min-width: 801px)  and (max-width: 1199px){
-    .button-inter{
-      margin-bottom: 15%;
-    }
+.btn-close:hover {
+  filter: brightness(1.75) !important;
+}
+
+.modal-content {
+  background-color: #4a4c4e !important;
+}
+
+@media screen and (min-width: 801px) and (max-width: 1199px) {
+  .button-inter {
+    margin-bottom: 15%;
   }
+}
 
-  .modal-body{
-    text-align: center;
-    margin: auto;
+.modal-body {
+  text-align: center;
+  margin: auto;
 }
 
 .content-img-home {
-    min-width: 300px;
-    min-height: 300px;
-    position: relative;
-    width: 92% !important;
-    border-radius: 100%;
+  min-width: 300px;
+  min-height: 300px;
+  position: relative;
+  width: 92% !important;
+  border-radius: 100%;
 }
 
 .content-img-home .box-img-home:hover {
-    -webkit-animation: morph 2s ease-in-out 1s infinite;
-    animation: morph 5s ease-in-out 1s infinite;
-    background-blend-mode: multiply;
-    background-size: 300%;
-    border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+  -webkit-animation: morph 2s ease-in-out 1s infinite;
+  animation: morph 5s ease-in-out 1s infinite;
+  border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+  transition: 1s;
+
 }
 
-.content-img-home .box-img-home:hover  .label2 {
-    width: 60%;
-    margin-left: 40px;
+.content-img-home .box-img-home:hover .label2 {
+  width: 60%;
+  margin-left: 40px;
+  transition: 1s;
+
 }
 
 .content-img-home .box-img-home {
-    min-width: 60px;
-    margin: 20px;
-    cursor: pointer;
-    transition: 0.5s cubic-bezier(0.05, 0.61, 0.41, 0.95);
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;   
-    border-radius: 5%;
-    overflow: hidden;
+  min-width: 60px;
+  margin: 20px;
+  cursor: pointer;
+  transition: 0.5s cubic-bezier(0.05, 0.61, 0.41, 0.95);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius: 5%;
+  overflow: hidden;
 }
 
-.label2{
-    margin-top: 65%;
-    display: flex;
-    transition: 0.5s cubic-bezier(0.05, 0.61, 0.41, 0.95);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin-left: 10px;
-    color: white;
-    white-space: pre;
+.info {
+  margin-top: 23px;
+
 }
 
-body .div-img .box-img-home .label2 .info > div {
-    position: relative;
-    transition: 0.5s cubic-bezier(0.05, 0.61, 0.41, 0.95), opacity 0.5s ease-out;
+.label2 {
+  margin-top: 65%;
+  display: flex;
+  transition: 0.5s cubic-bezier(0.05, 0.61, 0.41, 0.95);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 10px;
+  color: white;
+  transition: 1s;
+  white-space: pre;
 }
 
-body .div-img .box-img-home .label2 .info  {
-    transition-delay: 0.1s;
-  }
+body .div-img .box-img-home .label2 .info>div {
+  position: relative;
+  transition: 0.5s cubic-bezier(0.05, 0.61, 0.41, 0.95), opacity 0.5s ease-out;
+}
+
+body .div-img .box-img-home .label2 .info {
+  transition-delay: 0.1s;
+}
 
 body .div-img .box-img-home .shadow {
-    position: absolute;
-    bottom: 0px;
-    left: 0px;
-    right: 0px;
-    height: 120px;
-    transition: 0.5s cubic-bezier(0.05, 0.61, 0.41, 0.95);
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  height: 120px;
+  transition: 0.5s cubic-bezier(0.05, 0.61, 0.41, 0.95);
 }
+
 .progress-div {
-    align-items: center;
-    display: flex;
+  align-items: center;
+  display: flex;
 }
+
 .progress-percentage {
-    flex: 0 0 60px;
-}
-.progress-fuel {
-    background: #fcfcfdb7;
-    display: block;
-    height: 6px;
-    position: relative;
-    width: 70%;
+  flex: 0 0 60px;
 }
 
-.progress-full {
-    background: var(--tertiary-color);
-    height: 100%;
-    left: 0;
-    position: absolute;
-    top: 0;
-    animation: 3s ease-in   both  progress-animation;  
-    width: 0;
+.progress-full-2 {
+  width: 65% !important;
+  top: 0;
 }
-@keyframes progress-animation{
-    0% { width: 0%; }
-    
-    50% { width: 40%}
-
-    100% { width: 80%}
-    
+.progress-full-3 {
+  width: 45% !important;
 }
-.slick-dots li button:before{
-    color: white !important;
+.progress-full{
+  width: 85% !important;
 
 }
-.slick-dots li.slick-active button:before{
-    color: var(--tertiary-color) !important;
+.progress-fuel  {
+  background: #fcfcfdb7;
+  display: block;
+  height: 6px;
+  position: relative;
+  width: 70%;
+}
+
+.progress-full, .progress-full-3, .progress-full-2 {
+  background: var(--tertiary-color);
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+
+  animation: 3s ease-in both progress-animation;
+}
+
+@keyframes progress-animation {
+  0% {
+    width: 0%;
+  }
+
+  50% {
+    width: 40%
+  }
+
+  100% {
+    width: 80%
+  }
 
 }
 
-.slick-prev:before, .slick-next:before{
-    color: var(--tertiary-color) !important;
+.slick-dots li button:before {
+  color: white !important;
 
 }
-.slick-arrow .slick-prev:hover, .slick-next:before:hover{
-    filter: brightness(1.75) !important; 
+
+.slick-dots li.slick-active button:before {
+  color: var(--tertiary-color) !important;
+
 }
-@media  screen and (max-width: 1300px) {
-  .slick-slider{
+
+.slick-prev:before,
+.slick-next:before {
+  color: var(--tertiary-color) !important;
+
+}
+
+.slick-arrow .slick-prev:hover,
+.slick-next:before:hover {
+  filter: brightness(1.75) !important;
+}
+
+@media screen and (max-width: 1300px) {
+  .slick-slider {
     display: grid !important;
     width: 95%;
     margin-left: 6px;
