@@ -37,30 +37,30 @@ function Habilidades() {
 
         responsive: [
             {
-              breakpoint: 700,
-              settings: {
-                slidesToShow: 1,
-                slidesToScroll: 1,
+                breakpoint: 700,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
 
-              },
+                },
             },
             {
-              breakpoint: 1150,
-              settings: {
-                slidesToShow: 2,
-                slidesToScroll: 2,
+                breakpoint: 1150,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 2,
 
-              },
+                },
             },
             {
-              breakpoint: 1300,
-              settings: {
-                slidesToShow: 3,
-                slidesToScroll: 3,
+                breakpoint: 1300,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 3,
 
-              },
+                },
             },
-            ],
+        ],
     };
 
     const tecnologies = [
@@ -142,7 +142,7 @@ function Habilidades() {
                 <span></span>
                 <span></span>
                 <span></span>
-Habilidades
+                Habilidades
             </button>
 
             <Modal show={show} onHide={handleClose} fullscreen={fullscreen}>
@@ -150,32 +150,32 @@ Habilidades
                     <h1 className='modal-title'>Habilidades</h1>
                 </Modal.Header>
                 <div className='modal-body col-md-10'>
-                <div>
-                        <Slider {...settings}> 
+                    <div>
+                        <Slider {...settings}>
 
 
-                        {tecnologies.map((tecnologie) => (                
-<>                    <Link to={ tecnologie.nome == 'PHP' || tecnologie.nome == 'Laravel' ? url+'php' : tecnologie.nome == 'Python' || tecnologie.nome == 'Django' ?  url+'python'  : tecnologie.nome == 'React' ?  url+'react' : null} >                    
+                            {tecnologies.map((tecnologie) => (
+                                <>                    <Link to={tecnologie.nome === 'PHP' || tecnologie.nome === 'Laravel' ? url + 'php' : tecnologie.nome === 'Python' || tecnologie.nome === 'Django' ? url + 'python' : tecnologie.nome === 'React' ? url + 'react' : null} >
 
-                            <div className='div-img content-img-home'>
-                                <div className='box-img-home' style={{ backgroundImage: "url(" + tecnologie.img + ")" }}>
-                                    <div className="shadow"></div>
-                                    <div className="label2">
-                                        <div className="info">
-                                            <div className="main">{tecnologie.nome}</div>
-                                            <div className="progress-div">
-                                                <div className="progress-percentage">{tecnologie.percentage}</div>
-                                                <div className="progress-fuel">
-                                                <span className={ tecnologie.percentage == '85%' ? 'progress-full' : tecnologie.percentage == '65%' ? 'progress-full-2' : ('progress-full-3')}></span>
+                                    <div className='div-img content-img-home'>
+                                        <div className='box-img-home' style={{ backgroundImage: "url(" + tecnologie.img + ")" }}>
+                                            <div className="shadow"></div>
+                                            <div className="label2">
+                                                <div className="info">
+                                                    <div className="main">{tecnologie.nome}</div>
+                                                    <div className="progress-div">
+                                                        <div className="progress-percentage">{tecnologie.percentage}</div>
+                                                        <div className="progress-fuel">
+                                                            <span className={tecnologie.percentage === '85%' ? 'progress-full' : tecnologie.percentage === '65%' ? 'progress-full-2' : ('progress-full-3')}></span>
+                                                        </div>
+                                                    </div>
+
                                                 </div>
                                             </div>
-
                                         </div>
                                     </div>
-                                </div>
-                            </div>
-                            </Link>
-                            </>  ))}
+                                </Link>
+                                </>))}
                         </Slider>
                     </div>
 
