@@ -5,7 +5,7 @@ import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeli
 import 'react-vertical-timeline-component/style.min.css';
 import { MdOutlineHomeWork, MdOutlineWorkOutline } from "react-icons/md";
 import { AiOutlineDownload } from "react-icons/ai";
-import Curriculo from "../../assets/pdf/vazio.docx"
+import Curriculo from "../../assets/pdf/Leonardo Souza.pdf"
 
 const Resume = () => {
 

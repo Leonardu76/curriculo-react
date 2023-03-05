@@ -1,7 +1,7 @@
 
 .menu-card {
   padding: 15px 5px;
-  background: linear-gradient(74deg, #ffffff, #000000, #000000, #000000, #fcf5f5);
+  background: linear-gradient(74deg, var(--tertiary-color), #000000, #000000, #000000, var(--tertiary-color));
   background-size: 150% 150%;
   animation: colors 25s ease infinite;
   border-right: 1px solid #2e344e;
