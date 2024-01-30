@@ -1,6 +1,5 @@
 .content-resume{
 float: right;
-margin-right: 15% !important;
 }
 .vertical-timeline-element:last-child{
 margin-bottom: 40% !important;
@@ -25,6 +24,8 @@ margin-bottom: 40% !important;
 color: white; 
 text-align: start;
 font-family: Special Elite, monospace;
+word-break: break-word;
+
 }
 
 .vertical-timeline-element-date{

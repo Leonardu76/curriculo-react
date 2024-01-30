@@ -3,7 +3,7 @@ import './portfolio.css'
 import Menu from '../../components/menu/menu'
 import ReactImg from "../../assets/imgs/skills/react.png"
 import Php from "../../assets/imgs/skills/php.png"
-import Python from "../../assets/imgs/skills/python.png"
+import Vue from "../../assets/imgs/skills/vue.jpg"
 import { Link } from "react-router-dom"
 
 const Portfolio = () => {
@@ -15,19 +15,19 @@ const Portfolio = () => {
     const cat = [
         {
             "id": 1,
-            "nome": "react",
+            "nome": "React.js",
             "img": ReactImg,
         },
         {
             "id": 2,
-            "nome": "php",
+            "nome": "PHP",
             "img": Php,
         },
         {
 
             "id": 3,
-            "nome": "python",
-            "img": Python,
+            "nome": "Vue.js",
+            "img": Vue,
         }
     ]
 
@@ -45,8 +45,6 @@ const Portfolio = () => {
                         <>
                             <div className='col-md-6 margin-bottom ' >
                                 <div className='div-project-border'>
-                                    <div className="borderTopLeft"></div>
-                                    <div className="borderTopRight"></div>
                                     <Link to={urlP + tecnologies.nome} >
 
                                         <div className='img-div-project'>
@@ -57,9 +55,6 @@ const Portfolio = () => {
                                                 </button>
                                             </div>
                                         </div>
-
-                                        <div className="borderBottomLeft"></div>
-                                        <div className="borderBottomRight"></div>
                                     </Link>
                                 </div>
 

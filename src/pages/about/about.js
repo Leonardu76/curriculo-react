@@ -17,27 +17,26 @@ const About = () => {
                 <Menu url={url} />
             </div>
             <div className='container'>
-                <div className='col-md-12 about-container'>
+                <div className='about-container'>
 
 
 
-                    <div className='about col-md-5'>
+                    <div className='about col-md-10'>
 
                         <h1 className='about-title'>Sobre mim</h1>
                         <div className='about-content'>
-                            <p>Sou Leonardo Oliveira Souza, tenho 25 anos.
-                                <br />
-                                Sou Desenvolvedor Web Jr.</p>
-                            <p>  Faço Análise e Desenvolvimento de Sistemas pela Cruzeiro do Sul.
-                            </p>
+                            Sou Leonardo Oliveira Souza, tenho 26 anos,
+                                e sou Desenvolvedor Web .
+                             Formado em Análise e Desenvolvimento de Sistemas pela Cruzeiro do Sul. 
+                            Possuo habilidades práticas e teóricas na área de desenvolvimento web, capacitando-me para criar soluções eficientes e inovadoras.
                             </div>
 
                         <div className='nav about-btns'>
-                            <div className='com-md-6'>
+                            <div className=''>
                             <Habilidades />
                             </div>
 
-                            <div className='com-md-6'>
+                            <div className=''>
                             <Certificados/>
                             </div>
 

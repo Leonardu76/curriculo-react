@@ -16,7 +16,7 @@ function Certificados() {
 
 
     return (
-        <div className='container' >
+        <div className='' >
             <button className=' button-inter item9' onClick={handleShow}>
                 <span></span>
                 <span></span>

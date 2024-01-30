@@ -15,64 +15,69 @@ const Resume = () => {
 
     return (
         <>
-        <div>
-        <Menu url={url} />
-    </div>
-        <div className='container'>
-        <div className=' content-resume row'>
-        <div className='col-md-2 btn-resume-content'>
-                <button className=' button-inter item9 btn-resume' >
-                <a href={Curriculo} download style={{color: "white"}}>
-                <AiOutlineDownload/>
-                </a>
-              
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-            <span className='resume-text-spam'>Baixar currículo</span>
-
+            <div>
+                <Menu url={url} />
             </div>
-            <div className='home col-md-10'>
+            <div className='container'>
+                <div className=' content-resume row'>
+                    <div className='col-md-2 btn-resume-content'>
+                        <button className=' button-inter item9 btn-resume' >
+                            <a href={Curriculo} download style={{ color: "white" }}>
+                                <AiOutlineDownload />
+                            </a>
 
-                <h1 className='content-resume-title'>Experiências</h1>
-              
-                <VerticalTimeline >
-                    <VerticalTimelineElement
-                        icon={<MdOutlineWorkOutline />}
-                        date="12/2022 – Present">
-                        <h3 className='resume-title'>Desenvolvedor Web Jr</h3>
-                        <h4 className='resume-title'>Construsite Brasil</h4>
-                        <p className='resume-description'>
-                        Programação, alteração e correção de sites em PHP.
-                        </p>
-                    </VerticalTimelineElement>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </button>
+                        <span className='resume-text-spam'>Baixar currículo</span>
 
-                    <VerticalTimelineElement
-                        icon={<MdOutlineWorkOutline />}
-                        date="08/2022 – 12/2022">
-                        <h3  className='resume-title'>Estagiário em Desenvolvimento Web</h3>
-                        <h4 className='resume-title'>Construsite Brasil</h4>
-                        <p className='resume-description'>
-                        Programação, alteração e correção de sites em PHP.
-                        </p>
-                    </VerticalTimelineElement>
+                    </div>
+                    <div className='home col-md-10'>
 
-                    <VerticalTimelineElement
-                        icon={<MdOutlineHomeWork />}
-                        date="08/2022 – 12/2022">
-                        <h3 className='resume-title'>Whobots</h3>
-                        <h4 className='resume-title'>Desenvolvedor Python</h4>
-                        <p className='resume-description'>
-                            Auxílio no desenvolvimento de chatbots para o Telegram.
-                        </p>
-                    </VerticalTimelineElement>
-                
-                </VerticalTimeline>
+                        <h1 className='content-resume-title'>Experiências</h1>
+
+                        <VerticalTimeline >
+                            <VerticalTimelineElement
+                                icon={<MdOutlineWorkOutline />}
+                                date="12/2022 – Present">
+                                <h3 className='resume-title'>Desenvolvedor Web</h3>
+                                <h4 className='resume-title'>Construsite Brasil</h4>
+                                <div class="resume-description-container">
+    <ul class='resume-description'>
+        <li>Desenvolvimento de aplicações web com PHP.</li>
+        <li>Criação e consumo de APIs para integração de sistemas utilizando o Laravel.</li>
+        <li>Utilização de jQuery para aprimorar a interatividade de sites.</li>
+        <li>Criação, implementação e correção de bugs em sites e sistemas como: sites, intranet e CMS.</li>
+    </ul>
+</div>
+                            </VerticalTimelineElement>
+
+                            <VerticalTimelineElement
+                                icon={<MdOutlineWorkOutline />}
+                                date="08/2022 – 12/2022">
+                                <h3 className='resume-title'>Estagiário em Desenvolvimento Web</h3>
+                                <h4 className='resume-title'>Construsite Brasil</h4>
+                                <p className='resume-description'>
+                                    Programação, alteração e correção de sites em PHP.
+                                </p>
+                            </VerticalTimelineElement>
+
+                            <VerticalTimelineElement
+                                icon={<MdOutlineHomeWork />}
+                                date="08/2022 – 12/2022">
+                                <h3 className='resume-title'>Whobots</h3>
+                                <h4 className='resume-title'>Desenvolvedor Python</h4>
+                                <p className='resume-description'>
+                                    Auxílio no desenvolvimento de chatbots para o Telegram.
+                                </p>
+                            </VerticalTimelineElement>
+
+                        </VerticalTimeline>
+                    </div>
+                </div>
             </div>
-        </div>
-        </div>
         </>
     )
 }

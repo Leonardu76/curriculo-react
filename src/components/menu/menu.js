@@ -1,7 +1,9 @@
 import React from 'react'
 import './menu.css'
 import { Link } from "react-router-dom"
-
+import { SlSocialLinkedin } from 'react-icons/sl';
+import { VscGithubAlt } from "react-icons/vsc";
+import { AiOutlineWhatsApp } from "react-icons/ai";
 
 const Menu = (props) => {
 
@@ -40,6 +42,19 @@ const Menu = (props) => {
                 </div>
             </div>
 
+            <div class='redes-menu'>
+                            <a target={'_blank'}  rel="noreferrer" href='https://www.linkedin.com/in/leonardo-oliveira-3b0446176/' class='icon-border-menu'>
+                                <SlSocialLinkedin class='icon' />
+                            </a>
+
+                            <a target={'_blank'} rel="noreferrer" href='https://github.com/Leonardu76' class='icon-border-menu'>
+                                <VscGithubAlt class='icon' />
+                            </a>
+
+                            <a target={'_blank'}  rel="noreferrer" href='https://api.whatsapp.com/send?phone=5531985808502&text=Olá! Vim através do site' class='icon-border-menu'>
+                                <AiOutlineWhatsApp class='icon' />
+                            </a>
+                        </div>
         </div>
 
 

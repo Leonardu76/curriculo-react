@@ -13,14 +13,13 @@
     margin-inline: 28px;
     transition: 1s;
 }
-
+.portfolio-background{
+    background-size: cover;
+}
 .modal{
     background-color: black !important;
 }
-.portfolio-img {
-    height: 100%;
 
-}
 
 .portfolio-background-title {
     font-family: Special Elite, monospace;
@@ -34,7 +33,7 @@
 }
 
 .portfolio-content-title{
-    width: 198%;
+    width: 145%;
     word-break: break-all;
     font-size: 22px;
 
@@ -43,6 +42,12 @@
     padding-bottom: 56px;
     border: 2px groove var(--tertiary-color);
     z-index: 0;
+    background-size: 100% 100%;
+    min-height: 310px;
+
+    transition: 1s;
+
+
 
 }
 
@@ -50,15 +55,19 @@
     box-shadow: 0 0 10px #14dad0, 0 0 15px #5B2BE2, 0 0 30px #14dad0;
     cursor: pointer;
     transition: 1s;
-
-}
-
-.portfolio-background:hover .project-img {
-    width: 100%;
+    background-size: 105% 105%;
     transition: 1s;
     margin-inline: 0;
 
 }
+
+.portfolio-background:hover .overlay{
+    background: transparent;
+    transition: 1s;
+
+
+}
+
 
 .card {
     background-color: black !important;
@@ -73,7 +82,7 @@
 }
 
 .portfolio-content {
-    margin-top: 15% !important;
+    margin-top: 30% !important;
 }
 
 .portfolio-content-tecnologies {
@@ -95,21 +104,19 @@
     margin-bottom: 5%;
 }
 
-.portfolio-div-body:nth-child(even)>.portfolio-content {
+.portfolio-div-body:nth-child(even)>.porfolio-even {
     position: absolute;
     margin-left: 40px;
     width: 22%;
 }
+
+
 .portfolio-div-body:nth-child(even)>.portfolio-background {
     margin-left: 514px;
     margin-top: 3.5rem;
 
 }
-.portfolio-div-body:nth-child(even)> .portfolio-content >.portfolio-content-title
-{
-    width: 185%;
 
-}
 .icon-tecnologies {
     font-size: 27px;
     margin-top: 10px;
@@ -228,3 +235,20 @@
         margin-left: calc(345px + 14%) ;
     }
 }
+
+.portfolio-background {
+    position: relative;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+    transition: 1s;
+
+}
+

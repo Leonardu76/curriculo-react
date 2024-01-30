@@ -2,7 +2,6 @@ import './contact.css'
 import Menu from '../../components/menu/menu'
 import React, { useState } from "react";
 import { BiMailSend } from "react-icons/bi";
-// import Swal from 'sweetalert2'
 import emailjs from "@emailjs/browser"
 
 
@@ -24,7 +23,7 @@ const Contact = () => {
             email: email
         }
         Swal.fire({
-            title: 'Enviar Email?',
+            title: 'Deseja enviar Email?',
             icon: 'question',
             showCancelButton: true,
             confirmButtonColor: '',
@@ -32,7 +31,7 @@ const Contact = () => {
             confirmButtonText: 'Enviar!'
         }).then((result) => {
             if (result.isConfirmed) {
-                emailjs.send("service_5hef5hc", "template_wij6115", emailParans, "Rn3bMroaX6cLH8evD").then((response) => {
+                emailjs.send("service_qgqj9dq", "template_wij6115", emailParans, "Rn3bMroaX6cLH8evD").then((response) => {
                     Swal.fire(
                         'Enviado!',
                         'Email enviado com sucesso!',

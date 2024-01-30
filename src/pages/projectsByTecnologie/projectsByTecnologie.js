@@ -2,6 +2,9 @@ import React from 'react';
 import './projectsByTecnologie.css'
 import Pokedex from "../../assets/imgs/projects/img-project-pokedex.png"
 import Contrucao from "../../assets/imgs/projects/img_em_construcao.png"
+import styleBarber from "../../assets/imgs/projects/styleBarber.png"
+
+
 import { VscGithubAlt } from "react-icons/vsc";
 import { useState, useEffect } from 'react';
 import { VscLinkExternal } from "react-icons/vsc";
@@ -17,7 +20,21 @@ function Projetos() {
 
 
     const see = () => {
-        if (project[0] === 'python') {
+        if (project[0] === 'Vue.js') {
+            setProjeto([
+                {
+                    "id": 1,
+                    "nome": "Barber style",
+                    "img": styleBarber,
+                    "tecnologies": "Vue.js, Nuxt.js, plugins",
+                    "descricao": "A Barbearia Cortes & Estilos é um estabelecimento fictício que oferece uma experiência de cuidado pessoal e estilo exclusiva para seus clientes...",
+                    "url_git": 'https://github.com/Leonardu76/stylusBarber',
+                    "url_site": 'https://kaleidoscopic-brigadeiros-300feb.netlify.app/'
+
+                }
+
+            ])
+        } else if (project[0] === 'PHP') {
             setProjeto([
                 {
                     "id": 1,
@@ -27,10 +44,9 @@ function Projetos() {
                     "descricao": "Lorem ipsum dolor sit amet consec tetur adipisicing elit. Dolores, volupt dent eveniet exercitationem, nemo corrupti cupiditate?.",
                     "url_git": null,
                     "url_site": null
-
                 },
                 {
-                    "id": 1,
+                    "id": 2,
                     "nome": "Em andamento",
                     "img": Contrucao,
                     "tecnologies": "Lorem ipsum,Lorem ipsum, Lorem ipsum, Lorem ipsum ",
@@ -39,21 +55,8 @@ function Projetos() {
                     "url_site": null
 
                 }
-
             ])
-        } else if (project[0] === 'php') {
-            setProjeto([
-                {
-                    "id": 1,
-                    "nome": "Em andamento",
-                    "img": Contrucao,
-                    "tecnologies": "Lorem ipsum,Lorem ipsum, Lorem ipsum, Lorem ipsum ",
-                    "descricao": "Lorem ipsum dolor sit amet consec tetur adipisicing elit. Dolores, volupt dent eveniet exercitationem, nemo corrupti cupiditate?.",
-                    "url_git": null,
-                    "url_site": null
-                }
-            ])
-        } else if (project[0] === 'react') {
+        } else if (project[0] === 'React.js') {
             setProjeto([
                 {
                     "id": 1,
@@ -70,7 +73,7 @@ function Projetos() {
 
     useEffect(() => {
         see();
-    })
+    }, [])
 
     return (
         <div className='container' >
@@ -87,17 +90,16 @@ function Projetos() {
                 {projeto.map((tecnologies) => (
                     <>
                         <div className='portfolio-div-body row'>
-                            <div className='portfolio-background col-md-8'>
-
-                                <h3 className='portfolio-background-title'>{tecnologies.nome}</h3>
-                                <div className='portfolio-img' >
-                                    <img src={tecnologies.img} alt="" className='project-img' />
-                                </div>
+                            <div className='portfolio-background col-md-8' style={{ backgroundImage: `url(${tecnologies.img})` }}>
+                            <div className='overlay'></div>
                             </div>
 
+                        <div className='col-md-4 porfolio-even' >
+                            <h3 className='portfolio-background-title'>{tecnologies.nome}</h3>
 
-                            <div className='portfolio-content col-md-4' >
+                            <div className='portfolio-content ' >
                                 <div className='portfolio-content-title' >
+                                    
                                     <p>{tecnologies.tecnologies}</p>
                                 </div>
                                 <div className='portfolio-description card' >
@@ -126,6 +128,7 @@ function Projetos() {
                                     </a>
 
                                 </div>
+                            </div>
                             </div>
 
                         </div>
