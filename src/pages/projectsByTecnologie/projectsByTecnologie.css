@@ -98,6 +98,7 @@
     filter: brightness(1.75) !important;
     font-size: 18px;
     transition: 1s;
+    color: white;
 }
 
 .portfolio-div-body {

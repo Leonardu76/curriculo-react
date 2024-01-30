@@ -26,7 +26,7 @@ function Projetos() {
                     "id": 1,
                     "nome": "Barber style",
                     "img": styleBarber,
-                    "tecnologies": "Vue.js, Nuxt.js, plugins",
+                    "tecnologies": "Vue.js, Nuxt.js",
                     "descricao": "A Barbearia Cortes & Estilos é um estabelecimento fictício que oferece uma experiência de cuidado pessoal e estilo exclusiva para seus clientes...",
                     "url_git": 'https://github.com/Leonardu76/stylusBarber',
                     "url_site": 'https://kaleidoscopic-brigadeiros-300feb.netlify.app/'
