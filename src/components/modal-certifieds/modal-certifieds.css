@@ -13,10 +13,14 @@
 
 .link{
     text-decoration: none;
+    transition: 1s;
+
     color: white;
 }
 .link:hover{
-    color: var(--tertiary-color)
+    color: var(--tertiary-color);
+    transition: 1s;
+
 }
 .link:last-child{
     margin-bottom: 20px;

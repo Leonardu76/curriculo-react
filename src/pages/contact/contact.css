@@ -36,7 +36,7 @@
 .form-contact{
     position: absolute;
     height: 501px;
-    border-radius: 20px;
+    border-radius: 10px;
     border: 2px groove var(--tertiary-color)    ;
     margin-top: 78px;
     width: 452px;
@@ -99,8 +99,8 @@
 
   .btn-send-email{
     display: inline-flex !important;
-    flex-direction: row;
     align-items: center;
+    margin-top: 9px;
     gap: 7px;
   }
  

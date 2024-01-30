@@ -6,20 +6,13 @@ margin-top: 50px !important;
 }
 
 .img-div-background{
-    /* width: 50%; */
-    /* height: 70%; */
-    height: 415px;
+    height: 355px;
     background-size: 200%;
     background-position: center;
-    height: 415px;
     margin: 50px;
-    opacity: 0.8;
     transition: 1s;
-    /* border: 2px groove var(--tertiary-color); */
 
 }
-
-
 
 .btn-project{
     display: none;
@@ -29,95 +22,43 @@ display: block;
 
 }
 .img-div-background:hover{
-    opacity: 1;
     transition: 1s;
     background-size: 230%;
     cursor: pointer;
 
 }
-.div-project-border:hover  .borderTopLeft  {
-    filter: brightness(0.8) !important;
 
-}
-.div-project-border:hover  .borderTopRight {
-    filter: brightness(0.8) !important;
-}
-.div-project-border:hover  .borderBottomLeft  {
-    filter: brightness(0.8) !important;
-}
-.div-project-border:hover  .borderBottomRight  {
-    filter: brightness(0.8) !important;
-}
 
 .title-tec-spam {
-    display: none;
+    opacity: 0;
     color: #fff;
     text-transform: uppercase;
     font-size: 17px;
     margin-left: -5px;
-    margin-top: 104%;
+    margin-top: 89%;
     border: 2px groove var(--tertiary-color);
-    background-color: transparent;
+    background-color: black;
     transition: 1s;
 }
 .title-tec-spam:hover {
     box-shadow: 0 0 10px #14dad0, 0 0 15px #5B2BE2, 0 0 30px #14dad0;
     cursor: pointer;
+    transition: 1s;
+
 }
 .img-div-background:hover >  .title-tec-spam {
     display: inline-grid;
+    opacity: 1;
+
 
 }
 
 
 
 
-.borderTopLeft {
-    border-bottom: 2px;
-    border-left: 2px solid var(--tertiary-color); 
-    border-right: 2px;
-    border-top: 2px solid var(--tertiary-color); 
-    height: 40px;
-    margin: -18px 0px 7px 36px;
-    position: absolute;
-    width: 40px;
-    transition: 1s;
 
-}
-.borderTopRight {
-    border-bottom: 2px;
-    border-left: 2px;
-    border-right: 2px solid var(--tertiary-color);
-    border-top: 2px solid var(--tertiary-color);
-    height: 40px;
-    margin: -21px 0 0px 40%;
-    position: absolute;
-    width: 40px;
-    transition: 1s;
 
-}
-.borderBottomLeft {
-    border-bottom: 2px solid var(--tertiary-color);
-    border-top: 2px;
-    height: 40px;
-    position: absolute;
-    transition: 1s;
-    width: 40px;
-    border-left: 2px solid var(--tertiary-color);
-    border-right: 2px;
-    margin: -71px 0px 0px 34px;
-}
-.borderBottomRight {
-    border-bottom: 2px solid var(--tertiary-color);
-    border-top: 2px;
-    height: 40px;
-    position: absolute;
-    transition: 1s;
-    width: 40px;
-    border-left: 2px;
-    border-right: 2px solid var(--tertiary-color);
-    margin: -74px 0 0 40%;
-}
+
 @media screen and (max-width: 380px) {
     .title-tec-spam {
         margin-top: 95% !important;
@@ -133,18 +74,7 @@ display: block;
         margin-bottom: 30px;
 
     }
-    .borderTopLeft{
-        margin: -14px 0px 7px -15px;
-    }
-    .borderTopRight{
-        margin: -17px 0 0px 80%;
-    }
-    .borderBottomLeft{
-        margin: -52px 0px 0px -16px;
-    }
-    .borderBottomRight{
-        margin: -54px 0 0 79%;
-    }
+  
     .margin-bottom{
         margin-bottom: 40px;
 

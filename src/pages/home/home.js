@@ -32,7 +32,7 @@ const Home = () => {
                     </div> */}
                     <div class='content-home-footer col-md-7'>
                         <p class='content-resume-home'>
-                            Desenvolvedor Web Jr. <br />
+                            Desenvolvedor Web Fullstack. <br />
                             Análise e Desenvolvimento de Sistemas. 
                             <hr />
                             Belo Horizonte

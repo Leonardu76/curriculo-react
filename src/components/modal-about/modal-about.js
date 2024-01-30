@@ -3,11 +3,8 @@ import React, { useState } from 'react';
 import Modal from 'react-bootstrap/Modal';
 import './modal-about.css'
 import Git from "../../assets/imgs/skills/git.png"
-import Mongo from "../../assets/imgs/skills/mongo.jpg"
 import Mysql from "../../assets/imgs/skills/mySQL.png"
-import Phyton from "../../assets/imgs/skills/python.jpg"
 import ReactImg from "../../assets/imgs/skills/react.png"
-import Django from "../../assets/imgs/skills/django.png"
 import Laravel from "../../assets/imgs/skills/laravel.png"
 import Php from "../../assets/imgs/skills/php.png"
 import jquery from "../../assets/imgs/skills/jquery.png"
@@ -77,31 +74,17 @@ function Habilidades() {
             "percentage": "85%"
 
         },
-        {
-
-            "id": 3,
-            "nome": "Python",
-            "img": Phyton,
-            "percentage": "65%"
-
-        },
+     
         {
 
             "id": 4,
             "nome": "Laravel",
             "img": Laravel,
-            "percentage": "45%"
+            "percentage": "85%"
 
         }
         ,
-        {
-
-            "id": 6,
-            "nome": "Django",
-            "img": Django,
-            "percentage": "65%"
-
-        },
+       
         {
 
             "id": 7,
@@ -110,15 +93,8 @@ function Habilidades() {
             "percentage": "85%"
 
         },
-        {
-
-            "id": 8,
-            "nome": "Mongo",
-            "img": Mongo,
-            "percentage": "65%"
-
-        }
-        ,
+      
+        
         {
 
             "id": 9,
@@ -136,7 +112,7 @@ function Habilidades() {
     ]
     const url = '../projects/'
     return (
-        <div className='container' >
+        <div className='' >
             <button className=' button-inter item9' onClick={handleShow}>
                 <span></span>
                 <span></span>
