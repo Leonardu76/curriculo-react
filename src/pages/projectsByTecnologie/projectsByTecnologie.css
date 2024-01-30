@@ -102,7 +102,7 @@
     color: white;
 }
 .portfolio-description {
-color: white;
+color: white !important;
 }
 .portfolio-div-body {
     margin-bottom: 5%;
