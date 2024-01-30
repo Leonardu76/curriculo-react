@@ -73,7 +73,7 @@ function Projetos() {
 
     useEffect(() => {
         see();
-    }, [])
+    })
 
     return (
         <div className='container' >
