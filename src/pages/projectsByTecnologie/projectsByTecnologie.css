@@ -83,6 +83,7 @@
 
 .portfolio-content {
     margin-top: 30% !important;
+    
 }
 
 .portfolio-content-tecnologies {
@@ -100,7 +101,9 @@
     transition: 1s;
     color: white;
 }
-
+.portfolio-description {
+color: white;
+}
 .portfolio-div-body {
     margin-bottom: 5%;
 }
