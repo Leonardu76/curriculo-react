@@ -1,5 +1,5 @@
 .about-container {
-  font-family: Special Elite, monospace;
+  font-family: Cinzel, monospace;
   display: inline-flex !important;
   justify-content: flex-end;
 }
@@ -9,7 +9,7 @@
   animation: fadein 5s;
   line-height: 43px;
   text-align: start;
-  font-size: 25px;
+  font-size: 18px;
 }
 
 .about-title {
@@ -30,7 +30,7 @@
 
 .item9:hover {
   color: rgb(255, 255, 255);
-  box-shadow: 0 0 10px #14dad0, 0 0 15px #5B2BE2, 0 0 30px #14dad0;
+  box-shadow: 0 0 10px  var(--tertiary-color), 0 0 15px #5B2BE2, 0 0 30px  var(--tertiary-color);
   transition-delay: 1s;
 }
 
@@ -58,7 +58,7 @@
   height: 100%;
   right: 0;
   top: -100%;
-  background: linear-gradient(181.44deg, transparent, #14dad0);
+  background: linear-gradient(181.44deg, transparent,  var(--tertiary-color));
 }
 
 .item9:hover span:nth-child(2) {
@@ -86,7 +86,7 @@
   height: 100%;
   left: 0;
   bottom: -100%;
-  background: linear-gradient(359.88deg, transparent, #14dad0);
+  background: linear-gradient(359.88deg, transparent,  var(--tertiary-color));
 }
 
 .item9:hover span:nth-child(4) {
@@ -101,7 +101,7 @@
   padding: 10px 20px;
   font-size: 21px;
   color: #F6F6F6;
-  border: 1px solid #14dad0;
+  border: 1px solid  var(--tertiary-color);
   cursor: pointer;
   transition: .5s;
 }

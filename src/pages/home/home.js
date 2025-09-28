@@ -8,11 +8,8 @@ import { AiOutlineWhatsApp } from "react-icons/ai";
 
 
 const Home = () => {
-    // const [data, setData] = useState([])
 
     let url = 'home'
-
-
     return ( 
         <div >
            <div >
@@ -26,13 +23,10 @@ const Home = () => {
                     <h1 class='col-md-3'>Olá, eu sou <strong>Leonardo Souza!</strong></h1>
                 </div>
                 <div class='content-home-body row'>
-                    {/* <div class='content-img-home col-md-2'>
-                        <div class="box-img-home" style={{ backgroundImage: "url(" + Photo + ")" }}>
-                        </div>
-                    </div> */}
+                   
                     <div class='content-home-footer col-md-7'>
                         <p class='content-resume-home'>
-                            Desenvolvedor Web Fullstack. <br />
+                            Desenvolvedor Web <br />
                             Análise e Desenvolvimento de Sistemas. 
                             <hr />
                             Belo Horizonte

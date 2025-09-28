@@ -2,7 +2,6 @@ import React from 'react'
 import './about.css'
 import Menu from '../../components/menu/menu'
 import Habilidades from '../../components/modal-about/modal-about'
-import Certificados from '../../components/modal-certifieds/modal-certifieds'
 
 
 const About = () => {
@@ -25,10 +24,9 @@ const About = () => {
 
                         <h1 className='about-title'>Sobre mim</h1>
                         <div className='about-content'>
-                            Sou Leonardo Oliveira Souza, tenho 26 anos,
-                                e sou Desenvolvedor Web .
-                             Formado em Análise e Desenvolvimento de Sistemas pela Cruzeiro do Sul. 
-                            Possuo habilidades práticas e teóricas na área de desenvolvimento web, capacitando-me para criar soluções eficientes e inovadoras.
+                          Formado em Análise e Desenvolvimento de Sistemas, com sólida experiência no desenvolvimento de soluções web. <br />
+
+Atuação com PHP/Laravel, React.js, Vue.js, criando aplicações escaláveis e interativas.
                             </div>
 
                         <div className='nav about-btns'>
@@ -36,10 +34,7 @@ const About = () => {
                             <Habilidades />
                             </div>
 
-                            <div className=''>
-                            <Certificados/>
-                            </div>
-
+                          
                         </div>
                     </div>
                 </div>

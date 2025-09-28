@@ -1,14 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swa');
 
 
 body {
-  --tertiary-color: #1bc0d1c4;
+  --tertiary-color: #e6e6e6c4;
   --user-button-circle: rgba(0, 0, 0, 0.025);
   --user-button-cardborder: rgba(255, 255, 255, 0.25);
   --user-button-text: #323133;
   --user-button-shadow: rgba(0, 0, 0, 0.1);
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Special Elite','Segoe UI', 'Roboto', 'Oxygen',
+  font-family: -apple-system, BlinkMacSystemFont, 'Cinzel','Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;

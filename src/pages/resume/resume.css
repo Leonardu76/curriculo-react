@@ -1,130 +1,156 @@
-.content-resume{
-float: right;
+.content-resume {
+  float: right;
 }
-.vertical-timeline-element:last-child{
-margin-bottom: 40% !important;
+.vertical-timeline-element:last-child {
+  margin-bottom: 40% !important;
 }
-.body-container{
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0.5rem 0.5rem 2rem 0 rgba(0, 0, 0, 0.2); 
+.body-container {
+  padding: 20px;
+  box-shadow: 0.5rem 0.5rem 2rem 0 rgba(0, 0, 0, 0.2);
 }
-.btn-resume-content{
-    padding-top: 200px;
-    left: 20%;
+.btn-resume-content {
+  padding-top: 50px;
+  left: 20%;
 }
-.content-resume-title{
-    margin-bottom: 30px;
-    padding-top: 50px;
-    text-align: center;
-    font-family: Special Elite, monospace;
-
+.content-resume-title {
+  margin-bottom: 30px;
+  padding-top: 50px;
+  text-align: center;
+  font-family: Cinzel, monospace;
 }
-.resume-title, .resume-description{
-color: white; 
-text-align: start;
-font-family: Special Elite, monospace;
-word-break: break-word;
-
+.resume-title,
+.resume-description {
+  color: white;
+  text-align: start;
+  font-family: Cinzel, monospace;
+  word-break: keep-all;
 }
 
-.vertical-timeline-element-date{
-    font-size: 15px !important;
-    clip-path:polygon(101% 0%,100% 48%,100% 95%,26% 341%,0% 49%,5% 1%) !important;
-    color: white !important;
-    background-color: var(--tertiary-color) !important;
-    opacity: unset !important;
+.vertical-timeline-element-date {
+  font-size: 15px !important;
+  clip-path: polygon(
+    101% 0%,
+    100% 48%,
+    100% 95%,
+    26% 341%,
+    0% 49%,
+    5% 1%
+  ) !important;
+  color: black !important;
+  background-color: var(--tertiary-color) !important;
+  opacity: unset !important;
 }
-.vertical-timeline-element-content{
-    background: unset !important;
-}
-
-.timeline:before{
-    color: var(--tertiary-color);   
-}
-.vertical-timeline-element:nth-child(even) > .vertical-timeline-element-content .vertical-timeline-element-date{
-    clip-path:polygon(0% 0%, 95% 0%, 100% 50%, 95% 100%, 0% 100%) !important;
-
-}
-.vertical-timeline-element-icon{
-background-color: black !important;
+.vertical-timeline-element-content {
+  background: unset !important;
+  border-radius: 0 !important;
 }
 
-.vertical-timeline--two-columns .vertical-timeline-element-icon:hover{
+.timeline:before {
+  color: var(--tertiary-color);
+}
+.vertical-timeline-element:nth-child(even)
+  > .vertical-timeline-element-content
+  .vertical-timeline-element-date {
+  clip-path: polygon(0% 0%, 95% 0%, 100% 50%, 95% 100%, 0% 100%) !important;
+}
+.vertical-timeline-element-icon {
+  background-color: black !important;
+}
+
+.vertical-timeline--two-columns .vertical-timeline-element-icon:hover {
   cursor: pointer;
   transition: 1s;
-  color: var(--tertiary-color) ;
-     -webkit-box-shadow: 0 0 0 4px #fff, inset 0 2px 0 rgb(0 0 0 / 8%), 0 3px 0 4px rgb(0 0 0 / 5%);
-     box-shadow: 0 0 0 4px  var(--tertiary-color) , inset 0 2px 0 rgb(0 0 0 / 8%), 0 3px 0 4px rgb(0 0 0 / 5%);
-    } 
+  color: var(--tertiary-color);
+  -webkit-box-shadow: 0 0 0 4px #fff, inset 0 2px 0 rgb(0 0 0 / 8%),
+    0 3px 0 4px rgb(0 0 0 / 5%);
+  box-shadow: 0 0 0 4px var(--tertiary-color), inset 0 2px 0 rgb(0 0 0 / 8%),
+    0 3px 0 4px rgb(0 0 0 / 5%);
+}
 .btn-resume:hover ~ .resume-text-spam {
-    display: block;
+  display: block;
 }
 .resume-text-spam {
-
-    display: none;
-    color: #fff;
-    border-radius: 81px !important;
-    border-radius: 4px;
-    position: relative;
-    text-transform: uppercase;
-    top: -100px;
-    left: -27%;
-    font-size: 14px;
+  display: none;
+  color: #fff;
+  position: relative;
+  text-transform: uppercase;
+  top: -100px;
+  left: -27%;
+  font-size: 14px;
 }
-
-
-@media only screen and (min-width: 1170px){
-.btn-resume-content{
+.resume-description li {
+  margin-bottom: 20px;
+}
+.home:has(btn-resume-content) {
+  margin-inline-start: auto;
+  width: 80%;
+}
+@media only screen and (min-width: 1170px) {
+  .btn-resume-content {
     position: fixed;
-}
-.vertical-timeline-element:first-child {
+  }
+  .vertical-timeline-element:first-child {
     margin-top: 0;
     margin-right: -55px !important;
     margin-left: -53px !important;
-}
-.vertical-timeline-element:first-of-type > .vertical-timeline-element-content  .vertical-timeline-element-content-arrow{
+  }
+  .vertical-timeline-element:first-of-type
+    > .vertical-timeline-element-content
+    .vertical-timeline-element-content-arrow {
     margin-left: 9px !important;
-}
+  }
 
-.vertical-timeline-element:first-of-type > .vertical-timeline-element-content  .vertical-timeline-element-date{
-    width: 80% !important;
-}
-.vertical-timeline-element-date{
+  .vertical-timeline-element:first-of-type
+    > .vertical-timeline-element-content
+    .vertical-timeline-element-date {
+    width: 70% !important;
+  }
+  .vertical-timeline-element-date {
     text-align: center !important;
-}
-.vertical-timeline.vertical-timeline--two-columns{
-    width: 100% !important;
-}
-}
-@media  screen and (min-width: 320px) and (max-width: 1170px) {
-    .btn-resume{
-        margin-bottom: unset !important;
-    
-    }
-    .btn-resume-content{
-        padding-top: 10px;
-    }
-    .vertical-timeline-element-date{
-        float: unset !important;
-        padding: 0.8em 32px !important;
-        clip-path: unset !important;
-    }
-    .vertical-timeline-element:nth-child(even) > .vertical-timeline-element-content .vertical-timeline-element-date{
-        clip-path: unset !important;
-
-    }
-    .resume-text-spam{
-        top: 11px;
-        left: -31%;
-    }
+  }
+  .vertical-timeline.vertical-timeline--two-columns {
+    width: 70% !important;
+  }
 }
 
-@media  screen and (min-width: 800px) and (max-width: 1100px) {
-    .btn-resume-content{
-        position: relative;
-        right: 7% ;
-        bottom: 7%;
-    }
-   
+
+@media screen and (min-width: 320px) and (max-width: 1170px) {
+  .btn-resume {
+    margin-bottom: unset !important;
+  }
+  .btn-resume-content {
+    padding-top: 10px;
+  }
+  .vertical-timeline-element-date {
+    float: unset !important;
+    padding: 0.8em 32px !important;
+    clip-path: unset !important;
+  }
+  .vertical-timeline-element:nth-child(even)
+    > .vertical-timeline-element-content
+    .vertical-timeline-element-date {
+    clip-path: unset !important;
+  }
+  .resume-text-spam {
+    top: 11px;
+    left: -31%;
+  }
+}
+
+@media screen and (min-width: 800px) and (max-width: 1100px) {
+  .btn-resume-content {
+    position: relative;
+    right: 7%;
+    bottom: 7%;
+  }
+
+ 
+}
+
+@media screen and (max-width: 1100px) {
+  .vertical-timeline {
+    width: auto !important;
+    max-width: 615px !important;
+    margin: auto;
+  }
 }

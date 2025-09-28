@@ -20,7 +20,7 @@ const Resume = () => {
             </div>
             <div className='container'>
                 <div className=' content-resume row'>
-                    <div className='col-md-2 btn-resume-content'>
+                    <div className='btn-resume-content'>
                         <button className=' button-inter item9 btn-resume' >
                             <a href={Curriculo} download style={{ color: "white" }}>
                                 <AiOutlineDownload />
@@ -34,15 +34,38 @@ const Resume = () => {
                         <span className='resume-text-spam'>Baixar currículo</span>
 
                     </div>
-                    <div className='home col-md-10'>
+                    <div className='home'>
 
                         <h1 className='content-resume-title'>Experiências</h1>
 
                         <VerticalTimeline >
+
+                             <VerticalTimelineElement
+                                icon={<MdOutlineWorkOutline />}
+                                date="10/2023 – Present">
+                                <h3 className='resume-title'>Team leader</h3>
+                                <h4 className='resume-title'>Construsite Brasil</h4>
+                                <div class="resume-description-container">
+    <ul class='resume-description'>
+  <li>Lidero um squad de desenvolvimento focado em criar e manter sites e sistemas web robustos, garantindo qualidade e performance.</li>
+  <li>Desenvolvimento, correções e manutenção de aplicações PHP.</li>
+  <li>Criação e consumo de APIs para integração de sistemas utilizando o Laravel.</li>
+  <li>Criação e manutenção de projetos front-end com React, garantindo interfaces modernas e responsivas.</li>
+  <li>Utilização de jQuery, incluindo integração de AJAX, plugins e outras tecnologias, para aprimorar a interatividade de sites.</li>
+  <li>Gestão e acompanhamento de Planos de Desenvolvimento Individual (PDI) dos colaboradores do squad, promovendo crescimento profissional.</li>
+  <li>Realizo reuniões diárias para acompanhar tarefas, identificar obstáculos e garantir o cumprimento de prazos e metas.</li>
+  <li>Apoio contínuo à equipe, fomentando o aprimoramento técnico e comportamental dos desenvolvedores.</li>
+  <li>Definição de boas práticas e arquitetura de software, assegurando código limpo e escalável.</li>
+</ul>
+
+</div>
+                            </VerticalTimelineElement>
+
+
                             <VerticalTimelineElement
                                 icon={<MdOutlineWorkOutline />}
-                                date="12/2022 – Present">
-                                <h3 className='resume-title'>Desenvolvedor Web</h3>
+                                date="12/2022 – 10/2023">
+                                <h3 className='resume-title'>Desenvolvedor Web jr I</h3>
                                 <h4 className='resume-title'>Construsite Brasil</h4>
                                 <div class="resume-description-container">
     <ul class='resume-description'>
@@ -66,7 +89,7 @@ const Resume = () => {
 
                             <VerticalTimelineElement
                                 icon={<MdOutlineHomeWork />}
-                                date="08/2022 – 12/2022">
+                                date="02/2022 – 06/2022">
                                 <h3 className='resume-title'>Whobots</h3>
                                 <h4 className='resume-title'>Desenvolvedor Python</h4>
                                 <p className='resume-description'>

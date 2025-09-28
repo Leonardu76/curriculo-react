@@ -3,6 +3,8 @@ import './projectsByTecnologie.css'
 import Pokedex from "../../assets/imgs/projects/img-project-pokedex.png"
 import Contrucao from "../../assets/imgs/projects/img_em_construcao.png"
 import styleBarber from "../../assets/imgs/projects/styleBarber.png"
+import leoSoft from "../../assets/imgs/projects/leosoft.png"
+
 
 
 import { VscGithubAlt } from "react-icons/vsc";
@@ -27,9 +29,17 @@ function Projetos() {
                     "nome": "Barber style",
                     "img": styleBarber,
                     "tecnologies": "Vue.js, Nuxt.js",
-                    "descricao": "A Barbearia Cortes & Estilos é um estabelecimento fictício que oferece uma experiência de cuidado pessoal e estilo exclusiva para seus clientes...",
                     "url_git": 'https://github.com/Leonardu76/stylusBarber',
                     "url_site": 'https://kaleidoscopic-brigadeiros-300feb.netlify.app/'
+
+                },
+                  {
+                    "id": 2,
+                    "nome": "Leo soft",
+                    "img": leoSoft,
+                    "tecnologies": "Vue.js, Nuxt.js, Ant Design Vue",
+                    "url_git": null,
+                    "url_site": 'https://leosoft.netlify.app/'
 
                 }
 
@@ -41,7 +51,6 @@ function Projetos() {
                     "nome": "Em andamento",
                     "img": Contrucao,
                     "tecnologies": "Lorem ipsum,Lorem ipsum, Lorem ipsum, Lorem ipsum ",
-                    "descricao": "Lorem ipsum dolor sit amet consec tetur adipisicing elit. Dolores, volupt dent eveniet exercitationem, nemo corrupti cupiditate?.",
                     "url_git": null,
                     "url_site": null
                 },
@@ -50,7 +59,6 @@ function Projetos() {
                     "nome": "Em andamento",
                     "img": Contrucao,
                     "tecnologies": "Lorem ipsum,Lorem ipsum, Lorem ipsum, Lorem ipsum ",
-                    "descricao": "Lorem ipsum dolor sit amet consec tetur adipisicing elit. Dolores, volupt dent eveniet exercitationem, nemo corrupti cupiditate?.",
                     "url_git": null,
                     "url_site": null
 
@@ -63,7 +71,6 @@ function Projetos() {
                     "nome": "Pokedex",
                     "img": Pokedex,
                     "tecnologies": "React.js, Fetch API, Styled Components",
-                    "descricao": "Quem nunca quis saber o nome daquele pokemon? Ou saber da próxima evolução dele? Pensando nisso criei a Pokedex!",
                     "url_git": "https://www.github.com/Leonardu76/Pokedex-React",
                     "url_site": "https://dapper-pie-836bf4.netlify.app/"
                 }
@@ -84,26 +91,23 @@ function Projetos() {
 
 
             <h1 className='projects-title'>{project}</h1>
-            <div className='portfolio-div col-md-8'>
+            <div className='portfolio-div'>
 
 
                 {projeto.map((tecnologies) => (
                     <>
                         <div className='portfolio-div-body row'>
-                            <div className='portfolio-background col-md-8' style={{ backgroundImage: `url(${tecnologies.img})` }}>
-                            <div className='overlay'></div>
-                            </div>
-
-                        <div className='col-md-4 porfolio-even' >
+                            <div className='portfolio-background' style={{ backgroundImage: `url(${tecnologies.img})` }}>
+                            <div className='overlay'> <div className='col-md-4 porfolio-even' >
                             <h3 className='portfolio-background-title'>{tecnologies.nome}</h3>
 
                             <div className='portfolio-content ' >
                                 <div className='portfolio-content-title' >
                                     
-                                    <p>{tecnologies.tecnologies}</p>
+                                    
                                 </div>
                                 <div className='portfolio-description card' >
-                                    {tecnologies.descricao}
+                                    <p>{tecnologies.tecnologies}</p>
                                 </div>
                                 <div className='portfolio-content-tecnologies'>
 
@@ -129,7 +133,11 @@ function Projetos() {
 
                                 </div>
                             </div>
+                            </div></div>
+                             
                             </div>
+
+                      
 
                         </div>
 
