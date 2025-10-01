@@ -69,7 +69,7 @@ const Contact = () => {
     return (
         <div>
             <Menu url={url} />
-            <div className="container">
+            <div className="container col-md-9">
                 <div className="contact-content">
                     <h1 className="contact-title">Contato</h1>
 

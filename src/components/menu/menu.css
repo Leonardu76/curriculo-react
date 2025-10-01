@@ -60,7 +60,7 @@ line-height: 60px;  color: white;
     background-position: 0% 50%;
   }
 }
-@media (max-width: 800px){
+@media (max-width: 991px){
   .menu-card{
     all:unset;
   }

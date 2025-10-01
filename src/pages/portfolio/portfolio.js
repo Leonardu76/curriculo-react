@@ -1,76 +1,153 @@
-import React from 'react'
+import React from 'react';
 import './portfolio.css'
+import Pokedex from "../../assets/imgs/projects/img-project-pokedex.png"
+import Contrucao from "../../assets/imgs/projects/img_em_construcao.png"
+import styleBarber from "../../assets/imgs/projects/styleBarber.png"
+import leoSoft from "../../assets/imgs/projects/leosoft.png"
 import Menu from '../../components/menu/menu'
-import ReactImg from "../../assets/imgs/skills/react.png"
-import Php from "../../assets/imgs/skills/php.png"
-import Vue from "../../assets/imgs/skills/vue.jpg"
-import { Link } from "react-router-dom"
 
-const Portfolio = () => {
+import { VscGithubAlt, VscLinkExternal } from "react-icons/vsc";
+import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
+import 'react-tabs/style/react-tabs.css';
+import { Link } from "react-router-dom";
+    let url = 'projects'
 
+function Projetos() {
 
-    let url = 'portfolio'
-    const urlP = "../projects/"
-
-    const cat = [
-        {
-            "id": 1,
-            "nome": "React.js",
-            "img": ReactImg,
-        },
-        {
-            "id": 2,
-            "nome": "PHP",
-            "img": Php,
-        },
-        {
-
-            "id": 3,
-            "nome": "Vue.js",
-            "img": Vue,
-        }
+  const projetos = {
+    "Vue.js": [
+      {
+        "id": 1,
+        "nome": "Barber style",
+        "img": styleBarber,
+        "tecnologies": "Vue.js, Nuxt.js",
+        "url_git": 'https://github.com/Leonardu76/stylusBarber',
+        "url_site": 'https://kaleidoscopic-brigadeiros-300feb.netlify.app/'
+      },
+      {
+        "id": 2,
+        "nome": "Leo soft",
+        "img": leoSoft,
+        "tecnologies": "Vue.js, Nuxt.js, Ant Design Vue",
+        "url_git": null,
+        "url_site": 'https://leosoft.netlify.app/'
+      }
+    ],
+    "PHP": [
+      {
+        "id": 1,
+        "nome": "Em andamento",
+        "img": Contrucao,
+        "tecnologies": "Lorem ipsum, Lorem ipsum, Lorem ipsum",
+        "url_git": null,
+        "url_site": null
+      },
+      {
+        "id": 2,
+        "nome": "Em andamento",
+        "img": Contrucao,
+        "tecnologies": "Lorem ipsum, Lorem ipsum, Lorem ipsum",
+        "url_git": null,
+        "url_site": null
+      }
+    ],
+    "React.js": [
+      {
+        "id": 1,
+        "nome": "Pokedex",
+        "img": Pokedex,
+        "tecnologies": "React.js, Fetch API, Styled Components",
+        "url_git": "https://www.github.com/Leonardu76/Pokedex-React",
+        "url_site": "https://dapper-pie-836bf4.netlify.app/"
+      }
     ]
+  };
 
-    return (
-        <>
-            <div>
-                <Menu url={url} />
-            </div>
-            <div className='container'>
-                <div className='div-project row'>
-                    <h1 className='contact-title'>Projetos</h1>
+  const allProjects = Object.values(projetos).flat();
 
+  const renderProjects = (list) => (
+    <div className='portfolio-div'>
+      {list.map((tecnologies) => (
+        <div key={tecnologies.id} className='portfolio-div-body row'>
+          <div className='portfolio-background' style={{ backgroundImage: `url(${tecnologies.img})` }}>
+            <div className='overlay'>
+              <div className='col-md-4 porfolio-even'>
+                <h3 className='portfolio-background-title'>{tecnologies.nome}</h3>
 
-                    {cat.map((tecnologies) => (
-                        <>
-                            <div className='col-md-6 margin-bottom ' >
-                                <div className='div-project-border'>
-                                    <Link to={urlP + tecnologies.nome} >
+                <div className='portfolio-content'>
+                  <div className='portfolio-description card'>
+                    <p>{tecnologies.tecnologies}</p>
+                  </div>
+                  <div className='portfolio-content-tecnologies'>
+                    <a
+                      rel="noreferrer"
+                      className='div-tecnologies'
+                      target={"_blank"}
+                      href={tecnologies.url_site || "#"}
+                      style={{ textDecoration: "none" }}
+                    >
+                      <div className='div-tecnologies'>
+                        <VscLinkExternal className='icon-tecnologies' />
+                        <span className='resume-tec-spam'>
+                          {tecnologies.url_site ? 'Ir ao site' : 'Em breve'}
+                        </span>
+                      </div>
+                    </a>
 
-                                        <div className='img-div-project'>
-
-                                            <div className='img-div-background' style={{ backgroundImage: "url(" + tecnologies.img + ")" }}>
-                                                <button className='title-tec-spam'  >
-                                                    {tecnologies.nome}
-                                                </button>
-                                            </div>
-                                        </div>
-                                    </Link>
-                                </div>
-
-                            </div>
-                        </>
-
-                    ))}
-
-
-
-
+                    <a
+                      rel="noreferrer"
+                      target={"_blank"}
+                      className='div-tecnologies'
+                      href={tecnologies.url_git || "#"}
+                      style={{ textDecoration: "none" }}
+                    >
+                      <div className='div-tecnologies'>
+                        <VscGithubAlt className='icon-tecnologies' />
+                        <span className='resume-tec-spam'>
+                          {tecnologies.url_git ? 'Ir ao Github' : 'Em breve'}
+                        </span>
+                      </div>
+                    </a>
+                  </div>
                 </div>
+              </div>
             </div>
-        </>
-    )
+          </div>
+        </div>
+      ))}
+    </div>
+  );
+
+  return (    
+           <div>
+        <Menu url={url} />
+              
+
+
+
+
+    <div className='container col-md-9'>
+    
+
+      <h1 className='projects-title'>Meus Projetos</h1>
+
+      <Tabs defaultIndex={0}>
+        <TabList>
+          <Tab>Todos</Tab>
+          <Tab>Vue.js</Tab>
+          <Tab>React.js</Tab>
+          <Tab>PHP</Tab>
+        </TabList>
+
+        <TabPanel>{renderProjects(allProjects)}</TabPanel>
+        <TabPanel>{renderProjects(projetos["Vue.js"])}</TabPanel>
+        <TabPanel>{renderProjects(projetos["React.js"])}</TabPanel>
+        <TabPanel>{renderProjects(projetos["PHP"])}</TabPanel>
+      </Tabs>
+    </div>
+        </div>
+
+  );
 }
 
-export default Portfolio
-
+export default Projetos;

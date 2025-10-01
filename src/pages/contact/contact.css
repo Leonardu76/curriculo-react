@@ -23,7 +23,7 @@
   transition: 1s;
   animation: fadein 5s;
 
-  display: inline-flex !important;
+  display: inline-flex;
   flex-direction: column;
 }
 .label-float {
@@ -143,7 +143,8 @@
 @media screen and (max-width: 850px) {
   .form-contact-background,
   .form-contact {
-    margin: auto;
+   margin-top: unset !important;
+   width: 100%;
   }
   .contact-wrapper {
   display: inline-flex;
@@ -151,15 +152,17 @@
     align-items: center;
 }
 .contact-info{
-  margin-top: unset !important;
+ display: none;
+}
+.contact-content{
+display: flex ;
 }
 }
 
 
 .contact-wrapper {
     display: flex;
-    gap: 40px;
-    flex-wrap: wrap;
+  
     margin-top: 20px;
 }
 
