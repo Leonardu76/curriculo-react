@@ -140,6 +140,11 @@
   content: "*";
 }
 
+@media screen and (min-width: 992px)  and (max-width: 1230px) {
+  .contact-content{
+        padding-inline-start: 150px;
+  }
+}
 @media screen and (max-width: 850px) {
   .form-contact-background,
   .form-contact {

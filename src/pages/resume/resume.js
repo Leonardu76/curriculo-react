@@ -16,7 +16,7 @@ const Resume = () => {
   return (
     <>
       <Menu url={url} />
-      <div className="container col-md-10">
+      <div className="container col-12 col-md-9 col-lg-12">
         <div className=" content-resume row">
           <div className="btn-resume-content">
             <button className=" button-inter item9 btn-resume">

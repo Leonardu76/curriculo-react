@@ -11,7 +11,7 @@ const Home = () => {
   return (
     <div>
       <Menu url={url} />
-      <div className="container col-md-10">
+      <div className="container col-12 col-md-9 col-lg-12">
         <div class="content-home col-md-10">
           <div class="h1 line ">
             <h1 class="col-md-3">

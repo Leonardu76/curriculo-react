@@ -171,8 +171,17 @@
 @media screen and (min-width: 991px) {
  .portfolio-background {
      min-height: 400px;}
+      .react-tabs{
+        margin-inline-start: 180px;
+  }
 }
 
+
+@media screen and (min-width: 992px)  and (max-width: 1230px) {
+  .react-tabs{
+        margin-inline-start: 150px;
+  }
+}
 
 .portfolio-background {
   position: relative;

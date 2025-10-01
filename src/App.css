@@ -39,8 +39,9 @@
 
 @media screen and (min-width: 991px) {
  .container {
-      margin-inline-end: inherit !important;
+    margin-left: 150px;
 
 }
 
 }
+

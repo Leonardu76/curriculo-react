@@ -12,7 +12,7 @@ const Menu = (props) => {
 
 
     return (
-        <div className="menu-card col-md-2">
+        <div className="menu-card col-12 col-md-3 col-lg-2">
 
 
             <div className="menu-ul">

@@ -126,7 +126,7 @@ function Projetos() {
 
 
 
-    <div className='container col-md-9'>
+    <div className='container col-12 col-md-9 col-lg-12'>
     
 
       <h1 className='projects-title'>Meus Projetos</h1>

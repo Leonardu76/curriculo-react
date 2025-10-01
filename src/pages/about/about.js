@@ -9,7 +9,7 @@ const About = () => {
   return (
     <>
       <Menu url={url} />
-      <div className="container col-md-10">
+      <div className="container col-12 col-md-9 col-lg-12">
         <div className="about-container">
           <div className="about col-md-10">
             <h1 className="about-title">Sobre mim</h1>
