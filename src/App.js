@@ -10,29 +10,30 @@ import React from 'react'
 
 function App() {
   return (
-    <div class="App">
-      <div>
-      <BrowserRouter>
-
-<Routes>
-<Route element={<Home />} path="" />
-<Route element={<About />} path="/about" />
-<Route element={<Contact />} path="/contact" />
-<Route element={<Resume />} path="/resume"/>
-<Route element={<Projetos />} path="/portfolio"/>
-
-  <Route path='*' element={<div><h1>Página não encontrada!!</h1>
-  <img src="https://media.tenor.com/IHdlTRsmcS4AAAAM/404.gif" alt="" />
-  </div>} />
-
-
-
-</Routes>
-</BrowserRouter>
-
+      <div className="App">
+        <BrowserRouter>
+        
+          <Routes>
+            <Route element={<Home />} path="" />
+            <Route element={<About />} path="/about" />
+            <Route element={<Contact />} path="/contact" />
+            <Route element={<Resume />} path="/resume" />
+            <Route element={<Projetos />} path="/portfolio" />
+            <Route
+              path="*"
+              element={
+                <div>
+                  <h1>Página não encontrada!!</h1>
+                  <img
+                    src="https://media.tenor.com/IHdlTRsmcS4AAAAM/404.gif"
+                    alt=""
+                  />
+                </div>
+              }
+            />
+          </Routes>
+        </BrowserRouter>
       </div>
-  
-    </div>
   );
 }
 

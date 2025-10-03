@@ -20,7 +20,7 @@ const Resume = () => {
         <div className=" content-resume row">
           <div className="btn-resume-content">
             <button className=" button-inter item9 btn-resume">
-              <a href={Curriculo} download style={{ color: "white" }}>
+              <a href={Curriculo} download >
                 <AiOutlineDownload />
               </a>
 

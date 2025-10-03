@@ -20,7 +20,7 @@
 }
 .resume-title,
 .resume-description {
-  color: white;
+  color: var(--font-color);
   text-align: start;
   font-family: Cinzel, monospace;
   word-break: keep-all;
@@ -36,7 +36,7 @@
     0% 49%,
     5% 1%
   ) !important;
-  color: black !important;
+   color: var(--font-color) !important;
   background-color: var(--tertiary-color) !important;
   opacity: unset !important;
 }
@@ -45,8 +45,8 @@
   border-radius: 0 !important;
 }
 
-.timeline:before {
-  color: var(--tertiary-color);
+.timeline:before, .vertical-timeline:before {
+  color: var(--tertiary-color) !important;
 }
 .vertical-timeline-element:nth-child(even)
   > .vertical-timeline-element-content
@@ -69,6 +69,9 @@
 .btn-resume:hover ~ .resume-text-spam {
   display: block;
 }
+.btn-resume a {
+  color: var(--font-color)
+}
 .resume-text-spam {
   display: none;
   color: #fff;
@@ -84,6 +87,10 @@
 .home:has(btn-resume-content) {
   margin-inline-start: auto;
   width: 80%;
+}
+
+.vertical-timeline-element-content-arrow{
+border-right: 7px solid var(--font-color) !important ;
 }
 @media only screen and (min-width: 1170px) {
   .btn-resume-content {

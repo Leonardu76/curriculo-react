@@ -1,24 +1,81 @@
-@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swa');
+@import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swa");
 
-
-body {
-  --tertiary-color: #e6e6e6c4;
-  --user-button-circle: rgba(0, 0, 0, 0.025);
-  --user-button-cardborder: rgba(255, 255, 255, 0.25);
-  --user-button-text: #323133;
-  --user-button-shadow: rgba(0, 0, 0, 0.1);
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Cinzel','Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  background: rgb(0, 0, 0) !important;
-  color: white!important;
+body.dark {
+  --tertiary-color: #c04e194f ;
+  --primary-color: rgb(0, 0, 0) !important;
+  --font-color: white;
+      animation: fadein 2s;
 
 }
 
+body.light {
+    --tertiary-color: rgb(0 0 0);
+  --primary-color: #ffffff !important;
+  --font-color: rgb(240, 95, 20);
+  font-weight: bolder;
+    animation: fadein 2s;
+}
+
+body.light .vertical-timeline:before {
+  background: var(--tertiary-color) !important ;
+}
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Cinzel", "Segoe UI", "Roboto",
+    "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+
+  color: var(--font-color) !important;
+  background: var(--primary-color) !important;
+}
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+button:not(:has([download])){
+  border-radius: 25px !important;
+}
+
+.switch-wrapper {
+  display: inline-block;
+  cursor: pointer;
+  margin: 50px;
+}
+
+.switch {
+  position: relative;
+  height: 40px;
+  background: var(--primary-color);
+  border: 2px solid var(--tertiary-color);
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 8px;
+  transition: background 0.3s ease;
+}
+
+.switch .icon {
+  font-size: 18px;
+  z-index: 2;
+}
+
+.slider {
+  position: absolute;
+  top: 2px;
+  bottom: 2px;
+  width: 36px;
+  border-radius: 50%;
+  background: var(--tertiary-color);
+  transition: transform 0.3s ease;
+  z-index: 1;
+}
+
+.switch.light .slider {
+  transform: translateX(0);
+}
+
+.switch.dark .slider {
+  transform: translateX(40px);
 }

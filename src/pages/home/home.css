@@ -11,8 +11,8 @@
 }
 
 .line {
-    border-right: 2px solid rgba(255, 255, 255, 0.75);
-    color: rgba(255, 255, 255, 0.75);
+    border-right: 2px solid var(--font-color);
+    color: var(--font-color);
     font-family: Cinzel, monospace;
     font-size: 3em;
     text-align: center;
@@ -26,7 +26,7 @@
 
 .content-resume-home {
     font-family: Cinzel, monospace;
-    color: rgb(255, 255, 255);
+    color: var(--font-color);
     animation: fadein 5s;
     margin-top: 74px;
     font-size: 23px;
@@ -38,9 +38,9 @@
 }
 
 .icon-border {
-    color: white;
+    color: var(--font-color);
     margin-left: 20px;
-    border: 2px solid white;
+    border: 2px solid var(--font-color);
     border-radius: 100px;
     padding: 10px;
     font-size: 2.5rem;

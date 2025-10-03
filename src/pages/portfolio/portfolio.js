@@ -10,7 +10,7 @@ import { VscGithubAlt, VscLinkExternal } from "react-icons/vsc";
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import 'react-tabs/style/react-tabs.css';
 import { Link } from "react-router-dom";
-    let url = 'projects'
+    let url = 'portfolio'
 
 function Projetos() {
 
